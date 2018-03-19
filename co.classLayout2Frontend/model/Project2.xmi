@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classLayout2Frontend:Project
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:classLayout2Frontend="http://www.classlayout2frontend.com/classLayout2Frontend"
+    xmlns:entities="http://www.classlayout2frontend.com/entities"
+    xmlns:views="http://www.classlayout2frontend.com/views"
+    xsi:schemaLocation="http://www.classlayout2frontend.com/classLayout2Frontend http://www.classlayout2frontend.com/views http://www.classlayout2frontend.com/entities http://www.classlayout2frontend.com/views#//Entities"
+    name="AdminEntities">
+  <entitiesmodel
+      name="Entities">
+    <modelElements
+        xsi:type="entities:Entity"
+        name="City">
+      <associations
+          xsi:type="entities:Reference"
+          name="Country"
+          required="true"
+          target="Country"/>
+      <properties
+          name="name"/>
+    </modelElements>
+    <modelElements
+        xsi:type="entities:Entity"
+        name="Country">
+      <properties
+          name="name"
+          required="true"/>
+    </modelElements>
+  </entitiesmodel>
+  <siteViews
+      name="Main Administrator">
+    <pageViews
+        name="CityAdministrator">
+      <elementViews
+          xsi:type="views:IterationContainer"
+          name="listCity"
+          dsisplayName="Lista Ciudades"
+          entity="City">
+        <elements
+            xsi:type="views:Text"
+            name="CityName"
+            property="name"/>
+      </elementViews>
+      <elementViews
+          xsi:type="views:InputForm"
+          name="FormCity"
+          entity="City">
+        <elements
+            xsi:type="views:InputText"
+            name="CityName"
+            property="name"
+            label="Nombre"/>
+        <elements
+            xsi:type="views:Selection"
+            name="Country"/>
+      </elementViews>
+    </pageViews>
+  </siteViews>
+</classLayout2Frontend:Project>

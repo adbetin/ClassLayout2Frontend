@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classLayout2Frontend:Project
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:classLayout2Frontend="http://www.classlayout2frontend.com/classLayout2Frontend"
+    xmlns:entities="http://www.classlayout2frontend.com/entities"
+    xmlns:views="http://www.classlayout2frontend.com/views"
+    xsi:schemaLocation="http://www.classlayout2frontend.com/classLayout2Frontend http://www.classlayout2frontend.com/views http://www.classlayout2frontend.com/entities http://www.classlayout2frontend.com/views#//Entities"
+    name="Tienda virtual">
+  <entitiesmodel
+      name="Entidades">
+    <modelElements
+        xsi:type="entities:Entity"
+        name="Article">
+      <associations
+          xsi:type="entities:Reference"
+          name="type"
+          target="ArticleType"/>
+      <properties
+          name="name"
+          required="true"
+          type="String"/>
+      <properties
+          name="description"
+          required="true"
+          type="String"/>
+    </modelElements>
+    <modelElements
+        xsi:type="entities:Entity"
+        name="ArticleType">
+      <properties
+          name="name"
+          type="String"/>
+    </modelElements>
+    <modelElements
+        xsi:type="entities:PrimitiveType"
+        name="String"/>
+    <modelElements
+        xsi:type="entities:PrimitiveType"
+        name="Int"/>
+  </entitiesmodel>
+  <siteViews
+      name="store"
+      templateColor="purple">
+    <pageViews
+        name="Main">
+      <elementViews
+          xsi:type="views:IterationContainer"
+          name="articleIterator"
+          dsisplayName="Iterador articulo"
+          entity="Article">
+        <elements
+            xsi:type="views:Image"
+            name="articleImage"
+            property="name"/>
+        <elements
+            xsi:type="views:Text"
+            name="name"
+            property="name"/>
+        <elements
+            xsi:type="views:Text"
+            name="Description"
+            property="description"/>
+      </elementViews>
+    </pageViews>
+  </siteViews>
+</classLayout2Frontend:Project>
