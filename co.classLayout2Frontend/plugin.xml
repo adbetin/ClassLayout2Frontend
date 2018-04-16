@@ -18,7 +18,7 @@
       <!-- @generated classLayout2Frontend -->
       <package
             uri="http://www.classlayout2frontend.com/entities"
-            class="co.classLayout2Frontend.Entities.entitiesPackage"
+            class="co.classLayout2Frontend.Entities.EntitiesPackage"
             genModel="model/classLayout2Frontend.genmodel"/>
    </extension>
 

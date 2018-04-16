@@ -1,68 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<classLayout2Frontend:Project
-    xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:classLayout2Frontend="http://www.classlayout2frontend.com/classLayout2Frontend"
-    xmlns:entities="http://www.classlayout2frontend.com/entities"
-    xmlns:views="http://www.classlayout2frontend.com/views"
-    xsi:schemaLocation="http://www.classlayout2frontend.com/classLayout2Frontend http://www.classlayout2frontend.com/views http://www.classlayout2frontend.com/entities http://www.classlayout2frontend.com/views#//Entities"
-    name="Tienda virtual">
-  <entitiesmodel
-      name="Entidades">
-    <modelElements
-        xsi:type="entities:Entity"
-        name="Article">
-      <associations
-          xsi:type="entities:Reference"
-          name="type"
-          target="ArticleType"/>
-      <properties
-          name="name"
-          required="true"
-          type="String"/>
-      <properties
-          name="description"
-          required="true"
-          type="String"/>
+<classLayout2Frontend:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:classLayout2Frontend="http://www.classlayout2frontend.com/classLayout2Frontend" xmlns:entities="http://www.classlayout2frontend.com/entities" xmlns:views="http://www.classlayout2frontend.com/views" xsi:schemaLocation="http://www.classlayout2frontend.com/classLayout2Frontend classLayout2Frontend.ecore http://www.classlayout2frontend.com/entities classLayout2Frontend.ecore#//Entities http://www.classlayout2frontend.com/views classLayout2Frontend.ecore#//Views" name="ArticleStore">
+  <entitiesmodel name="entityModel">
+    <modelElements xsi:type="entities:PrimitiveType" name="String"/>
+    <modelElements xsi:type="entities:PrimitiveType" name="Int"/>
+    <modelElements xsi:type="entities:PrimitiveType" name="Boolean"/>
+    <modelElements xsi:type="entities:PrimitiveType" name="Date"/>
+    <modelElements xsi:type="entities:Entity" name="Article">
+      <structuralFeatures xsi:type="entities:Property" name="name"/>
+      <structuralFeatures xsi:type="entities:Property" name="description" type="String"/>
+      <structuralFeatures xsi:type="entities:Property" name="image" type="String"/>
+      <structuralFeatures xsi:type="entities:Reference" name="category" target="ArticleCategory"/>
+      <structuralFeatures xsi:type="entities:Reference" name="brand" target="ArticleCategory"/>
     </modelElements>
-    <modelElements
-        xsi:type="entities:Entity"
-        name="ArticleType">
-      <properties
-          name="name"
-          type="String"/>
+    <modelElements xsi:type="entities:Entity" name="ArticleCategory">
+      <structuralFeatures xsi:type="entities:Property" name="name"/>
+      <structuralFeatures xsi:type="entities:Property" name="description" type="String"/>
     </modelElements>
-    <modelElements
-        xsi:type="entities:PrimitiveType"
-        name="String"/>
-    <modelElements
-        xsi:type="entities:PrimitiveType"
-        name="Int"/>
+    <modelElements xsi:type="entities:Entity" name="Brand">
+      <structuralFeatures xsi:type="entities:Property" name="name"/>
+      <structuralFeatures xsi:type="entities:Property" name="description" type="String"/>
+      <structuralFeatures xsi:type="entities:Property" name="image" type="String"/>
+    </modelElements>
   </entitiesmodel>
-  <siteViews
-      name="store"
-      templateColor="purple">
-    <pageViews
-        name="Main">
-      <elementViews
-          xsi:type="views:IterationContainer"
-          name="articleIterator"
-          dsisplayName="Iterador articulo"
-          entity="Article">
-        <elements
-            xsi:type="views:Image"
-            name="articleImage"
-            property="name"/>
-        <elements
-            xsi:type="views:Text"
-            name="name"
-            property="name"/>
-        <elements
-            xsi:type="views:Text"
-            name="Description"
-            property="description"/>
-      </elementViews>
-    </pageViews>
-  </siteViews>
+  <siteViews name="SiteArticleStore" templateName="" displayName="SiteArticleStore" pageViews="//@pageViews.0"/>
+  <pageViews name="PageArticleStore" elementViews="//@containerViews.1"/>
+  <containerViews xsi:type="views:InputForm" name="ArticleFormUtil" entity="Article">
+    <elements xsi:type="views:Autocomplete" name="SearchArticle" property="name"/>
+    <elements xsi:type="views:CheckList" name="BrandFilter" property="brand" label=""/>
+    <elements xsi:type="views:Dropdownlist" name="FilterCategory" property="category"/>
+  </containerViews>
+  <containerViews xsi:type="views:IterationContainer" name="ArticleStoreView" entity="Article">
+    <elements xsi:type="views:Image" name="ArticleImage" property="image"/>
+    <elements xsi:type="views:TextArea" name="ArticleName" property="name"/>
+    <elements xsi:type="views:TextArea" name="ArticleDescription" dsisplayName="" property="description"/>
+    <iterationFilters input="//@containerViews.0/@elements.0"/>
+    <iterationFilters input="//@containerViews.0/@elements.1"/>
+    <iterationFilters input="//@containerViews.0/@elements.2"/>
+  </containerViews>
 </classLayout2Frontend:Project>

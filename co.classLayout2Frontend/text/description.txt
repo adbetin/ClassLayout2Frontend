@@ -11,3 +11,4 @@ Package classLayout2Frontend <http://www.classlayout2frontend.com/classLayout2Fr
     Attribute name : EString<<1..1>>
     Reference entitiesmodel : EntitiesModel
     Reference siteViews : SiteView<<0..*>>
+    Reference pageViews : PageView<<0..*>>
