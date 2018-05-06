@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classLayout2Frontend:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:classLayout2Frontend="http://www.classlayout2frontend.com/classLayout2Frontend" xmlns:entities="http://www.classlayout2frontend.com/entities" xmlns:views="http://www.classlayout2frontend.com/views" xsi:schemaLocation="http://www.classlayout2frontend.com/classLayout2Frontend classLayout2Frontend.ecore http://www.classlayout2frontend.com/entities classLayout2Frontend.ecore#//Entities http://www.classlayout2frontend.com/views classLayout2Frontend.ecore#//Views" name="ArticleStore">
+  <entitiesmodel name="entityModel">
+    <modelElements xsi:type="entities:PrimitiveType" name="String"/>
+    <modelElements xsi:type="entities:PrimitiveType" name="Int"/>
+    <modelElements xsi:type="entities:PrimitiveType" name="Boolean"/>
+    <modelElements xsi:type="entities:PrimitiveType" name="Date"/>
+    <modelElements xsi:type="entities:Entity" name="City">
+      <structuralFeatures xsi:type="entities:Property" name="name"/>
+      <structuralFeatures xsi:type="entities:Property" name="description" type="String"/>
+      <structuralFeatures xsi:type="entities:Reference" name="country" target="Country"/>
+    </modelElements>
+    <modelElements xsi:type="entities:Entity" name="Country">
+      <structuralFeatures xsi:type="entities:Property" name="name"/>
+      <structuralFeatures xsi:type="entities:Property" name="description" type="String"/>
+      <structuralFeatures xsi:type="entities:Property" name="Code" type="String"/>
+    </modelElements>
+  </entitiesmodel>
+  <siteViews name="CityCountryAdmin" templateName="" displayName="" pageViews="//@pageViews.0 //@pageViews.1"/>
+  <pageViews name="CityAdmin" elementViews="//@containerViews.1 //@containerViews.3"/>
+  <pageViews name="CountryAdmin" elementViews="//@containerViews.0 //@containerViews.2"/>
+  <containerViews xsi:type="views:InputForm" name="CountryForm" entity="Country">
+    <elements xsi:type="views:InputText" name="countryName" property="name"/>
+    <elements xsi:type="views:InputText" name="countryDescription" property="description" multiline="true"/>
+    <elements xsi:type="views:InputText" name="countryCode" property="Code"/>
+  </containerViews>
+  <containerViews xsi:type="views:InputForm" name="CityForm" entity="City">
+    <elements xsi:type="views:InputText" name="cityName" property="name"/>
+    <elements xsi:type="views:InputText" name="cityDescription" property="description" multiline="true"/>
+    <elements xsi:type="views:Dropdownlist" name="cityCountry" dsisplayName="" property="Code"/>
+  </containerViews>
+  <containerViews xsi:type="views:IterationContainer" name="CountryList" dsisplayName="">
+    <elements xsi:type="views:TextArea" name="name" property="name"/>
+  </containerViews>
+  <containerViews xsi:type="views:IterationContainer" name="CityList">
+    <elements xsi:type="views:TextArea" name="name" property="name"/>
+  </containerViews>
+</classLayout2Frontend:Project>
