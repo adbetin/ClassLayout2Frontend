@@ -10,6 +10,13 @@
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="ClassLayout2Frontend" basePackage="co" disposableProviderFactory="true"
       ecorePackage="classLayout2Frontend.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="classLayout2Frontend.ecore#//LayoutType">
+      <genEnumLiterals ecoreEnumLiteral="classLayout2Frontend.ecore#//LayoutType/SINGLE_COLUMN"/>
+      <genEnumLiterals ecoreEnumLiteral="classLayout2Frontend.ecore#//LayoutType/TWO_COLUMNS"/>
+      <genEnumLiterals ecoreEnumLiteral="classLayout2Frontend.ecore#//LayoutType/LEFT_BAR"/>
+      <genEnumLiterals ecoreEnumLiteral="classLayout2Frontend.ecore#//LayoutType/RIGHT_BAR"/>
+      <genEnumLiterals ecoreEnumLiteral="classLayout2Frontend.ecore#//LayoutType/THREE_COLUMNS"/>
+    </genEnums>
     <genClasses ecoreClass="classLayout2Frontend.ecore#//Project">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Project/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Project/entitiesmodel"/>
@@ -17,116 +24,97 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Project/pageViews"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Project/containerViews"/>
     </genClasses>
-    <nestedGenPackages prefix="entities" disposableProviderFactory="true" ecorePackage="classLayout2Frontend.ecore#//Entities">
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/EntitiesModel">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Entities/EntitiesModel/name"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Entities/EntitiesModel/modelElements"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/EntityModelElement">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Entities/EntityModelElement/name"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Entities/EntityModelElement/description"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Entities/EntityModelElement/displayName"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/Association">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Entities/Association/many"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Entities/Association/target"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/Composition"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/Reference"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/Entity">
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Entities/Entity/superclass"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Entities/Entity/isAbstract"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Entities/Entity/structuralFeatures"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/Property">
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Entities/Property/type"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Entities/Property/defaultValue"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/Enumeration">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Entities/Enumeration/literals"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/PropertyType"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/Literal">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Entities/Literal/value"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/PrimitiveType"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Entities/StructuralFeature">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Entities/StructuralFeature/required"/>
-      </genClasses>
-    </nestedGenPackages>
-    <nestedGenPackages prefix="views" disposableProviderFactory="true" ecorePackage="classLayout2Frontend.ecore#//Views">
-      <genEnums typeSafeEnumCompatible="false" ecoreEnum="classLayout2Frontend.ecore#//Views/LayoutType">
-        <genEnumLiterals ecoreEnumLiteral="classLayout2Frontend.ecore#//Views/LayoutType/SINGLE_COLUMN"/>
-        <genEnumLiterals ecoreEnumLiteral="classLayout2Frontend.ecore#//Views/LayoutType/TWO_COLUMNS"/>
-        <genEnumLiterals ecoreEnumLiteral="classLayout2Frontend.ecore#//Views/LayoutType/LEFT_BAR"/>
-        <genEnumLiterals ecoreEnumLiteral="classLayout2Frontend.ecore#//Views/LayoutType/RIGHT_BAR"/>
-        <genEnumLiterals ecoreEnumLiteral="classLayout2Frontend.ecore#//Views/LayoutType/THREE_COLUMNS"/>
-      </genEnums>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/SiteView">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/SiteView/name"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/SiteView/templateName"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/SiteView/templateColor"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/SiteView/displayName"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Views/SiteView/pageViews"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/ContainerView">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Views/ContainerView/elements"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Views/ContainerView/entity"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/AtomicView">
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Views/AtomicView/property"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/ElementView">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/ElementView/name"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/ElementView/dsisplayName"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/ElementView/description"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/IterationContainer">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Views/IterationContainer/iterationFilters"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/InputForm"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/StaticContainer"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/Input">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/Input/label"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/InputText">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/InputText/multiline"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/Selection"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/Output"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/TextArea">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/TextArea/value"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/Image">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/Image/width"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/Image/height"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/PageView">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/PageView/name"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Views/PageView/elementViews"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/PageView/layoutType"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/IterationFilter">
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Views/IterationFilter/input"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/Dropdownlist"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/RadioButtonGroup"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/CheckList"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/Autocomplete">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/Autocomplete/multiple"/>
-      </genClasses>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/FileUpload"/>
-      <genClasses ecoreClass="classLayout2Frontend.ecore#//Views/List">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Views/List/multiple"/>
-      </genClasses>
-    </nestedGenPackages>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//Composition"/>
+    <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//Association">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Association/many"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Association/target"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//PropertyType"/>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//Property">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Property/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Property/defaultValue"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//StructuralFeature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//StructuralFeature/required"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//EntitiesModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//EntitiesModel/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//EntitiesModel/modelElements"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//EntityModelElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//EntityModelElement/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//EntityModelElement/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//EntityModelElement/displayName"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//Entity">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Entity/superclass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Entity/isAbstract"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Entity/structuralFeatures"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//PrimitiveType"/>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//Literal">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Literal/value"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//Enumeration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//Enumeration/literals"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//Reference"/>
+    <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//AtomicView">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//AtomicView/property"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//Autocomplete">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Autocomplete/multiple"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//Dropdownlist"/>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//Image">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Image/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Image/height"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//List">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//List/multiple"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//Output"/>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//IterationFilter">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//IterationFilter/input"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//InputText">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//InputText/multiline"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//PageView">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//PageView/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//PageView/elementViews"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//PageView/layoutType"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//SiteView">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//SiteView/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//SiteView/templateName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//SiteView/templateColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//SiteView/displayName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//SiteView/pageViews"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//StaticContainer"/>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//TextArea">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//TextArea/value"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//Selection"/>
+    <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//Input">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//Input/label"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//IterationContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//IterationContainer/iterationFilters"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//InputForm"/>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//CheckList"/>
+    <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//ElementView">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//ElementView/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//ElementView/dsisplayName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//ElementView/description"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//RadioButtonGroup"/>
+    <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//ContainerView">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//ContainerView/elements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference classLayout2Frontend.ecore#//ContainerView/entity"/>
+    </genClasses>
+    <genClasses ecoreClass="classLayout2Frontend.ecore#//FileUpload"/>
   </genPackages>
 </genmodel:GenModel>

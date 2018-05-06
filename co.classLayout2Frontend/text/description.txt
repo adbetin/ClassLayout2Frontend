@@ -12,3 +12,115 @@ Package classLayout2Frontend <http://www.classlayout2frontend.com/classLayout2Fr
     Reference entitiesmodel : EntitiesModel
     Reference siteViews : SiteView<<0..*>>
     Reference pageViews : PageView<<0..*>>
+    Reference containerViews : ContainerView<<0..*>>
+
+  Class Composition -> Association
+
+  Class Association -> StructuralFeature
+    Attribute many : EBoolean
+    Reference target : Entity<<1..1>>
+
+  Class PropertyType -> EntityModelElement
+
+  Class Property -> StructuralFeature
+    Reference type : PropertyType<<1..1>>
+    Attribute defaultValue : EString
+
+  Class StructuralFeature -> EntityModelElement
+    Attribute required : EBoolean
+
+  Class EntitiesModel
+    Attribute name : EString<<1..1>>
+    Reference modelElements : EntityModelElement<<0..*>>
+
+  Class EntityModelElement
+    Attribute name : EString<<1..1>>
+    Attribute description : EString
+    Attribute displayName : EString
+
+  Class Entity -> EntityModelElement
+    Reference superclass : Entity
+    Attribute isAbstract : EBoolean
+    Reference structuralFeatures : StructuralFeature<<0..*>>
+
+  Class PrimitiveType -> PropertyType
+
+  Class Literal -> EntityModelElement
+    Attribute value : EInt<<1..1>>
+
+  Class Enumeration -> PropertyType
+    Reference literals : Literal<<0..*>>
+
+  Class Reference -> Association
+
+  Class AtomicView -> ElementView
+    Reference property : StructuralFeature
+
+  Class Autocomplete -> Selection
+    Attribute multiple : EBoolean
+
+  Class Dropdownlist -> Selection
+
+  Class Image -> Output
+    Attribute width : EDouble
+    Attribute height : EDouble
+
+  Class List -> Selection
+    Attribute multiple : EBoolean
+
+  Class Output -> AtomicView
+
+  Class IterationFilter
+    Reference input : Input
+
+  Class InputText -> Input
+    Attribute multiline : EBoolean
+
+  Class PageView
+    Attribute name : EString
+    Reference elementViews : ElementView<<0..*>>
+    Attribute layoutType : LayoutType
+
+  Class SiteView
+    Attribute name : EString
+    Attribute templateName : EString
+    Attribute templateColor : EString
+    Attribute displayName : EString
+    Reference pageViews : PageView<<0..*>>
+
+  Class StaticContainer -> ContainerView
+
+  Class TextArea -> Output
+    Attribute value : EString
+
+  Class Selection -> Input
+
+  Class Input -> AtomicView
+    Attribute label : EString
+
+  Class IterationContainer -> ContainerView
+    Reference iterationFilters : IterationFilter<<0..*>>
+
+  Class InputForm -> ContainerView
+
+  Class CheckList -> Selection
+
+  Class ElementView
+    Attribute name : EString
+    Attribute dsisplayName : EString
+    Attribute description : EString
+
+  Class RadioButtonGroup -> Selection
+
+  Class ContainerView -> ElementView
+    Reference elements : ElementView<<0..*>>
+    Reference entity : Entity
+
+  Class FileUpload -> Input
+
+  Enum LayoutType
+    Literal SINGLE_COLUMN = 0
+    Literal TWO_COLUMNS = 1
+    Literal LEFT_BAR = 2
+    Literal RIGHT_BAR = 3
+    Literal THREE_COLUMNS = 4

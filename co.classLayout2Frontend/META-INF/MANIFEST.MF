@@ -8,12 +8,6 @@ Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: co.classLayout2Frontend,
- co.classLayout2Frontend.Entities,
- co.classLayout2Frontend.Entities.impl,
- co.classLayout2Frontend.Entities.util,
- co.classLayout2Frontend.Views,
- co.classLayout2Frontend.Views.impl,
- co.classLayout2Frontend.Views.util,
  co.classLayout2Frontend.impl,
  co.classLayout2Frontend.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
