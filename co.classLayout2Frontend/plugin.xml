@@ -14,4 +14,12 @@
             genModel="model/classLayout2Frontend.genmodel"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated angularIonic -->
+      <package
+            uri="http://www.angularionic.com/angularionic"
+            class="angularIonic.AngularIonicPackage"
+            genModel="model/angularIonic.genmodel"/>
+   </extension>
+
 </plugin>
