@@ -1,0 +1,9 @@
+<h3>Administrador de Producto</h3>
+
+<div *ngIf="!editItem">
+  <product-table></product-table>
+</div>
+<div *ngIf="editItem">
+  <button (click)="back()">Regresar</button>
+  <product-form [editItem]="editItem"></product-form>
+</div>
