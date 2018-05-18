@@ -10,8 +10,8 @@ Project returns Project:
 	'name' COLON name=EString COMMA
 	'entityModel' COLON entitiesmodel=EntitiesModel COMMA
 	'site' COLON siteViews+=SiteView COMMA
+	'components' COLON BRACKETSO containerViews+=ContainerView ( COMMA containerViews+=ContainerView)* BRACKETSC COMMA
 	'pages' COLON BRACKETSO pageViews+=PageView ( COMMA pageViews+=PageView)* BRACKETSC
-	'components' COLON BRACKETSO containerViews+=ContainerView ( COMMA containerViews+=ContainerView)* BRACKETSC
 	BRACESCLOSE;
 
 ContainerView returns ContainerView:
@@ -69,8 +69,8 @@ Composition returns Composition:
 		'composition' COLON name=EString COMMA
 		('required' COLON required=EBoolean COMMA)?
 		('many' COLON many=EBoolean COMMA)?
-		('description' description=EString)?
-		('displayName' displayName=EString)?
+		('description' COLON description=EString)?
+		('displayName' COLON displayName=EString)?
 		'target' COLON target=[Entity|EString]
 	BRACESCLOSE;
 
@@ -147,99 +147,93 @@ Autocomplete returns Autocomplete:
 
 Dropdownlist returns Dropdownlist:
 	{Dropdownlist}
-	'Dropdownlist'
-	name=EString
 	BRACESOPEN
-		('displayName' displayName=EString)?
-		('description' description=EString)?
-		('label' label=EString)?
-		('property' property=[StructuralFeature|EString])?
+		'dropDownList' COLON name=EString COMMA
+		('displayName' COLON displayName=EString COMMA)?
+		('description' COLON description=EString COMMA)?
+		('label' COLON label=EString COMMA)?
+		('property' COLON property=[StructuralFeature|EString])?
 	BRACESCLOSE;
 
 Image returns Image:
 	{Image}	
 	BRACESOPEN
-		'image' COLON name=EString
-		('displayName' displayName=EString)?
-		('description' description=EString)?
-		('width' width=EDouble)?
-		('height' height=EDouble)?
-		('property' property=[StructuralFeature|EString])?
+		'image' COLON name=EString COMMA
+		('displayName' COLON displayName=EString COMMA)?
+		('description' COLON description=EString COMMA)?
+		('width' COLON width=EDouble COMMA)?
+		('height' COLON height=EDouble COMMA)?
+		('property' COLON property=[StructuralFeature|EString])?
 	BRACESCLOSE;
 
 List returns List:
 	{List}
-	(multiple?='multiple')?
-	'List'
-	name=EString
 	BRACESOPEN
-		('displayName' displayName=EString)?
-		('description' description=EString)?
-		('label' label=EString)?
-		('property' property=[StructuralFeature|EString])?
+		'list' COLON name=EString COMMA
+		('multiple' COLON multiple=EBoolean COMMA)?
+		('displayName' COLON displayName=EString COMMA)?
+		('description'COLON description=EString COMMA)?
+		('label' COLON label=EString COMMA)?
+		('property' COLON property=[StructuralFeature|EString])?
 	BRACESCLOSE;
 
 InputText returns InputText:
 	{InputText}
-	(multiline?='multiline')?
-	'InputText'
-	name=EString
 	BRACESOPEN
-		('displayName' displayName=EString)?
-		('description' description=EString)?
-		('label' label=EString)?
-		('property' property=[StructuralFeature|EString])?
+		'inputText' COLON name=EString COMMA
+		('multiline' COLON multiline=EBoolean COMMA)?
+		('displayName' COLON displayName=EString COMMA)?
+		('description' COLON description=EString COMMA)?
+		('label' COLON label=EString COMMA)?
+		('property' COLON property=[StructuralFeature|EString] COMMA)?
 	BRACESCLOSE;
 
 StaticContainer returns StaticContainer:
 	{StaticContainer}
 	BRACESOPEN
-		'name' COLON name=EString COMMA
-		('displayName' displayName=EString)?
-		('description' description=EString)?
-		('entity' entity=[Entity|EString])?
-		('elements' BRACKETSO elements+=ElementView ( COMMA elements+=ElementView)* BRACKETSC )?
+		'staticContainer' COLON name=EString COMMA
+		('displayName' COLON displayName=EString COMMA)?
+		('description' COLON description=EString COMMA)?
+		('entity' COLON entity=[Entity|EString] COMMA)?
+		('elements' COLON BRACKETSO elements+=ElementView ( COMMA elements+=ElementView)* BRACKETSC )?
 	BRACESCLOSE;
 
 TextArea returns TextArea:
 	{TextArea}
-	'TextArea'
-	name=EString
 	BRACESOPEN
-		('displayName' displayName=EString)?
-		('description' description=EString)?
-		('value' value=EString)?
-		('property' property=[StructuralFeature|EString])?
+		'textArea' COLON name=EString COMMA
+		'isTitle' COLON isTitle=EBoolean COMMA
+		('displayName' COLON displayName=EString COMMA)?
+		('description' COLON description=EString COMMA)?
+		('value' COLON value=EString COMMA)?
+		('property' COLON property=[StructuralFeature|EString])?
 	BRACESCLOSE;
 
 IterationContainer returns IterationContainer:
 	{IterationContainer}
-	name=EString
 	BRACESOPEN
-		'containerType' COLON 'iteration' COMMA
-		('displayName' COLON displayName=EString)?
-		('description' COLON description=EString)?
-		('entity' COLON entity=[Entity|EString])?
-		('elements' BRACESOPEN elements+=ElementView ( COMMA elements+=ElementView)* BRACESCLOSE )?
-		('iterationFilters' BRACESOPEN iterationFilters+=IterationFilter ( COMMA iterationFilters+=IterationFilter)* BRACESCLOSE )?
+		'iterationContainer' COLON name=EString COMMA
+		('displayName' COLON displayName=EString COMMA)?
+		('description' COLON description=EString COMMA)?
+		('entity' COLON entity=[Entity|EString] COMMA)?
+		('elements' COLON BRACKETSO elements+=ElementView ( COMMA elements+=ElementView)* BRACKETSC COMMA)?
+		('iterationFilters' COLON BRACKETSO iterationFilters+=IterationFilter ( COMMA iterationFilters+=IterationFilter)* BRACKETSC )?
 	BRACESCLOSE;
 
 InputForm returns InputForm:
 	{InputForm}
-	'InputForm'
-	name=EString
 	BRACESOPEN
-		('displayName' displayName=EString)?
-		('description' description=EString)?
-		('entity' entity=[Entity|EString])?
-		('elements' BRACESOPEN elements+=ElementView ( COMMA elements+=ElementView)* BRACESCLOSE )?
+		'inputForm' COLON name=EString COMMA
+		('displayName' COLON displayName=EString COMMA)?
+		('description' COLON description=EString COMMA)?
+		'entity' COLON entity=[Entity|EString] COMMA
+		'elements' COLON BRACKETSO elements+=ElementView ( COMMA elements+=ElementView)* BRACKETSC
 	BRACESCLOSE;
 
 CheckList returns CheckList:
 	{CheckList}
-	'CheckList'
-	name=EString
 	BRACESOPEN
+		'checkList' COLON name=EString COMMA
 		('displayName' displayName=EString)?
 		('description' description=EString)?
 		('label' label=EString)?
@@ -253,13 +247,13 @@ RadioButtonGroup returns RadioButtonGroup:
 		('displayName' COLON displayName=EString COMMA)?
 		('description' COLON description=EString COMMA)?
 		('label' COLON label=EString COMMA)?
-		'property' property=[StructuralFeature|EString]
+		'property' COLON property=[StructuralFeature|EString]
 	BRACESCLOSE;
 
 FileUpload returns FileUpload:
 	{FileUpload}
 	BRACESOPEN
-		'name' COLON name=EString COMMA
+		'fileUpload' COLON name=EString COMMA
 		('displayName' displayName=EString)?
 		('description' description=EString)?
 		('label' label=EString)?
@@ -271,7 +265,6 @@ EDouble returns ecore::EDouble:
 
 IterationFilter returns IterationFilter:
 	{IterationFilter}
-	'IterationFilter'
 	BRACESOPEN
 		('input' input=[Input|EString])?
 	BRACESCLOSE;

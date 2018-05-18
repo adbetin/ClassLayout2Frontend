@@ -1,7 +1,7 @@
 {
 	name: "TestApp",
 	entityModel: {
-		name: "TestApp EntityModel",
+		name: "TestAppEntityModel",
 		elements: [
 			{
 				primitive: 'string'
@@ -16,25 +16,195 @@
 				primitive: 'any'
 			},
 			{
+				class: "ProductCategory",
+				displayName: "Categoria de producto",
+				elements: [
+					{
+						property: "categoryName",
+						displayName: "Nombre",
+						required: true,
+						dataType: string
+					},
+					{
+						property: "categoryCode",
+						displayName: "Codigo",
+						required: true,
+						dataType: string
+					}
+				]
+			},
+			{
+				class: "ProductBrand",
+				displayName: "Marca de producto",
+				elements: [
+					{
+						property: "brandname",
+						displayName: "Nombre",
+						required: true,
+						dataType: string
+					},
+					{
+						property: "brandcode",
+						displayName: "Codigo",
+						required: true,
+						dataType: string
+					}
+				]
+			},
+			{
 				class : 'Product',
+				displayName: "Producto",
 				elements: [
 					{
 						property: "name",
 						displayName: "Nombre",
-						required: true
-						dataType
+						required: true,
+						dataType: string
+					},
+					{
+						property: "description",
+						displayName: "Descripcion",
+						required: true,
+						dataType: string
+					},
+					{
+						property: "code",
+						displayName: "Codigo",
+						required: true,
+						dataType: string
+					},
+					{
+						property: "unitPrice",
+						displayName: "precio unitario",
+						required: false,
+						dataType: number
+					},
+					{
+						reference: "brand",
+						required: true,
+						many: false,
+						displayName: "Marca",
+						target: "ProductBrand"
+					},
+					{
+						reference: "category",
+						required: true,
+						many: false,
+						displayName: "Categoria",
+						target: "ProductCategory"
 					}
+					
 				]
 			}
 		]
 	},
 	site: {
 		name: "TestAppSite",
-		templateColor: "blue",
 		displayName: "Sitio de Prueba",
 	},
+	components: [
+		{
+			staticContainer: "static1",
+			elements: [
+				{
+					textArea: "title1",
+					isTitle: true,
+					value: "Elemento Presentacion 1",
+				},
+				{
+					textArea: "paragraph1",
+					isTitle: false,
+					value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+				},
+				{
+					textArea: "title2",
+					isTitle: true,
+					value: "Elemento Presentacion 2",
+				},
+				{
+					textArea: "paragraph2",
+					isTitle: false,
+					value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+				}
+			]
+			
+		},
+		{
+			staticContainer: "productAdmin",
+			entity: "TestAppEntityModel.Product",
+			elements: [
+				{
+					textArea: "title3",
+					isTitle: true,
+					value: "Administrador de producto",
+				},
+				{
+					iterationContainer: "productList",
+					elements: [
+						{
+							textArea: "nombre",
+							isTitle: false,
+							property: "TestAppEntityModel.Product.name"
+						},
+						{
+							textArea: "descripcion",
+							isTitle: false,
+							property: "TestAppEntityModel.Product.description"
+						},
+						{
+							textArea: "codigo",
+							isTitle: false,
+							property: "TestAppEntityModel.Product.code"
+						},
+						{
+							textArea: "precioUnitario",
+							isTitle: false,
+							property: "TestAppEntityModel.Product.unitPrice"
+						}
+					],	
+				},
+				{
+					inputForm: "productForm",
+					description: "Formulario edicion y creacion de producto",
+					entity: "TestAppEntityModel.Product",
+					elements: [
+						{
+							inputText: "inputName",
+							property: "TestAppEntityModel.Product.name",
+						},
+						{
+							inputText: "inputDescription",
+							multiline: true,
+							property: "TestAppEntityModel.Product.description",
+						},
+						{
+							inputText: "inputCode",
+							property: "TestAppEntityModel.Product.code",
+						},
+						{
+							inputText: "inputUnitPrice",
+							property: "TestAppEntityModel.Product.unitPrice",
+						}
+					],
+				}
+			]
+			
+		}
+	],
 	pages: [
-		
+		{
+			name: "StaticTest",
+			layoutType: SINGLE_COLUMN,
+			elementViews: [
+				static1
+			]
+		},
+		{
+			name: "AdminProduct",
+			layoutType: SINGLE_COLUMN,
+			elementViews: [
+				productAdmin
+			]
+		}
 	]
-	
 }

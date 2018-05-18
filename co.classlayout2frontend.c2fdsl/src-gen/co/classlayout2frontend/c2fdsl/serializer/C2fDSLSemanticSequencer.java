@@ -287,7 +287,14 @@ public class C2fDSLSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     InputForm returns InputForm
 	 *
 	 * Constraint:
-	 *     (name=EString displayName=EString? description=EString? entity=[Entity|EString]? (elements+=ElementView elements+=ElementView*)?)
+	 *     (
+	 *         name=EString 
+	 *         displayName=EString? 
+	 *         description=EString? 
+	 *         entity=[Entity|EString] 
+	 *         elements+=ElementView 
+	 *         elements+=ElementView*
+	 *     )
 	 */
 	protected void sequence_InputForm(ISerializationContext context, InputForm semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -303,8 +310,8 @@ public class C2fDSLSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *
 	 * Constraint:
 	 *     (
-	 *         multiline?='multiline'? 
 	 *         name=EString 
+	 *         multiline=EBoolean? 
 	 *         displayName=EString? 
 	 *         description=EString? 
 	 *         label=EString? 
@@ -358,8 +365,8 @@ public class C2fDSLSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *
 	 * Constraint:
 	 *     (
-	 *         multiple?='multiple'? 
 	 *         name=EString 
+	 *         multiple=EBoolean? 
 	 *         displayName=EString? 
 	 *         description=EString? 
 	 *         label=EString? 
@@ -433,10 +440,10 @@ public class C2fDSLSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *         name=EString 
 	 *         entitiesmodel=EntitiesModel 
 	 *         siteViews+=SiteView 
-	 *         pageViews+=PageView 
-	 *         pageViews+=PageView* 
 	 *         containerViews+=ContainerView 
-	 *         containerViews+=ContainerView*
+	 *         containerViews+=ContainerView* 
+	 *         pageViews+=PageView 
+	 *         pageViews+=PageView*
 	 *     )
 	 */
 	protected void sequence_Project(ISerializationContext context, Project semanticObject) {
@@ -533,7 +540,14 @@ public class C2fDSLSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     TextArea returns TextArea
 	 *
 	 * Constraint:
-	 *     (name=EString displayName=EString? description=EString? value=EString? property=[StructuralFeature|EString]?)
+	 *     (
+	 *         name=EString 
+	 *         isTitle=EBoolean 
+	 *         displayName=EString? 
+	 *         description=EString? 
+	 *         value=EString? 
+	 *         property=[StructuralFeature|EString]?
+	 *     )
 	 */
 	protected void sequence_TextArea(ISerializationContext context, TextArea semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
