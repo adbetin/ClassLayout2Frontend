@@ -185,7 +185,7 @@
 							inputText: "inputUnitPrice",
 							property: "TestAppEntityModel.Product.unitPrice",
 						}
-					],
+					]
 				}
 			]
 			

@@ -3034,21 +3034,20 @@ public class C2fDSLGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cElementsAssignment_16_1 = (Assignment)cGroup_16.eContents().get(1);
 		private final RuleCall cElementsElementViewParserRuleCall_16_1_0 = (RuleCall)cElementsAssignment_16_1.eContents().get(0);
 		private final RuleCall cBRACKETSCTerminalRuleCall_17 = (RuleCall)cGroup.eContents().get(17);
-		private final RuleCall cCOMMATerminalRuleCall_18 = (RuleCall)cGroup.eContents().get(18);
-		private final RuleCall cBRACESCLOSETerminalRuleCall_19 = (RuleCall)cGroup.eContents().get(19);
+		private final RuleCall cBRACESCLOSETerminalRuleCall_18 = (RuleCall)cGroup.eContents().get(18);
 		
 		//InputForm:
 		//	{InputForm} BRACESOPEN
 		//	'inputForm' COLON name=EString COMMA ('displayName' COLON displayName=EString COMMA)? ('description' COLON
 		//	description=EString COMMA)?
 		//	'entity' COLON entity=[Entity|EString] COMMA
-		//	'elements' COLON BRACKETSO elements+=ElementView (COMMA elements+=ElementView)* BRACKETSC COMMA
+		//	'elements' COLON BRACKETSO elements+=ElementView (COMMA elements+=ElementView)* BRACKETSC
 		//	BRACESCLOSE;
 		@Override public ParserRule getRule() { return rule; }
 		
 		//{InputForm} BRACESOPEN 'inputForm' COLON name=EString COMMA ('displayName' COLON displayName=EString COMMA)?
 		//('description' COLON description=EString COMMA)? 'entity' COLON entity=[Entity|EString] COMMA 'elements' COLON
-		//BRACKETSO elements+=ElementView (COMMA elements+=ElementView)* BRACKETSC COMMA BRACESCLOSE
+		//BRACKETSO elements+=ElementView (COMMA elements+=ElementView)* BRACKETSC BRACESCLOSE
 		public Group getGroup() { return cGroup; }
 		
 		//{InputForm}
@@ -3156,11 +3155,8 @@ public class C2fDSLGrammarAccess extends AbstractGrammarElementFinder {
 		//BRACKETSC
 		public RuleCall getBRACKETSCTerminalRuleCall_17() { return cBRACKETSCTerminalRuleCall_17; }
 		
-		//COMMA
-		public RuleCall getCOMMATerminalRuleCall_18() { return cCOMMATerminalRuleCall_18; }
-		
 		//BRACESCLOSE
-		public RuleCall getBRACESCLOSETerminalRuleCall_19() { return cBRACESCLOSETerminalRuleCall_19; }
+		public RuleCall getBRACESCLOSETerminalRuleCall_18() { return cBRACESCLOSETerminalRuleCall_18; }
 	}
 	public class CheckListElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "co.classlayout2frontend.c2fdsl.C2fDSL.CheckList");
@@ -4198,7 +4194,7 @@ public class C2fDSLGrammarAccess extends AbstractGrammarElementFinder {
 	//	'inputForm' COLON name=EString COMMA ('displayName' COLON displayName=EString COMMA)? ('description' COLON
 	//	description=EString COMMA)?
 	//	'entity' COLON entity=[Entity|EString] COMMA
-	//	'elements' COLON BRACKETSO elements+=ElementView (COMMA elements+=ElementView)* BRACKETSC COMMA
+	//	'elements' COLON BRACKETSO elements+=ElementView (COMMA elements+=ElementView)* BRACKETSC
 	//	BRACESCLOSE;
 	public InputFormElements getInputFormAccess() {
 		return pInputForm;

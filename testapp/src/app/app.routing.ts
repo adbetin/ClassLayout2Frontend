@@ -8,7 +8,6 @@ import { ProductCrudComponent } from './pages/product-crud/product-crud.componen
 export const routes: Routes =[
     { path: 'static-test',      component: StaticTestComponent },
     { path: 'form-test',        component: ProductCrudComponent },
-    { path: 'iterative-test',   component: UserProfileComponent },
     { path: '',                 redirectTo: 'static-test', pathMatch: 'full' },
     { path: '**',                 redirectTo: 'static-test', pathMatch: 'full' }
 ];

@@ -1,0 +1,82 @@
+rule Project2Application
+	transform
+		p:c2f!Project
+	to
+		app:angular!Application{
+			app.name=p.name; 
+			app.appmodule=p.siteViews.first().equivalent();
+			app.librarymodules = p.entitiesmodel.modelelements.select(me | me.isTypeOf(c2f!Entity)).equivalent();
+			app.services = p.entitiesmodel.modelelements.select(me | me.isTypeOf(c2f!Entity)).equivalent();
+			app.classifiers = p.entitiesmodel.modelelements.select(me | me.isTypeOf(c2f!Entity)).equivalent();
+		}
+
+rule SiteView2AppModule
+	transform
+	   sv:c2f!SiteView
+	to 
+	   a:angular!AppModule{
+	   	   a.name = sv.name;
+	   	   a.title = sv.displayName;
+	   	   a.pages = c2f!Project.allInstances().first().pageViews.equivalent();
+	   }
+	   
+rule PageView2Page
+	transform
+	   pv:c2f!PageView
+	to 
+	   p:angular!Page{
+	   	   p.route = pv.name;
+	   }
+	   
+rule Entity2Class
+	transform
+	   e:c2f!Entity
+	to 
+	   c:angular!Class{
+	   	   c.name = e.name;
+	   	   c.properties = e.structuralFeatures.select(me | me.isTypeOf(c2f!Property)).equivalent();
+	   }	   
+
+rule Entity2Service
+	transform
+	   e:c2f!Entity
+	to 
+	   s:angular!Service{
+	   	   s.name = e.name;
+	   }
+	   
+rule Entity2LibraryModule
+	transform
+	   e:c2f!Entity
+	to 
+	   lm:angular!LibraryModule{
+	   	   lm.name = e.name;
+	   	   lm.components = c2f!Project.allInstances().first().containerViews.select(cv | cv.entity.isDefined() and cv.entity.name = e.name).equivalent();
+	   }
+	   
+rule Property2ClassProperty
+	transform
+	   p:c2f!Property
+	to 
+	   cp:angular!ClassProperty{
+	   	   cp.name = p.name;
+	   	   cp.dataType = angular!DataType.allInstances().select(dt | dt.name = p.type.name).first();
+	   	   cp.required = p.required;
+	   }
+
+rule ContainerView2Component
+	transform
+	   cv:c2f!ContainerView
+	to 
+	   c:angular!Component{
+	   	   c.name = cv.name;
+	   }
+
+rule Primitive2DataType
+	transform
+	   p:c2f!PrimitiveType
+	to 
+	   dt:angular!DataType{
+	   	   dt.name = p.name;
+	   }
+	

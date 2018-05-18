@@ -1,0 +1,16 @@
+interface I[%=class.name%] {  
+    _id?: string;
+[% for(prop in class.properties){ %]  
+    [%=prop.name%] : [%if(prop.dataType.isDefined()){%][%=prop.dataType.name%][%}%];
+[% } %] 
+}
+
+export class [%=class.name%] {
+    _id?: string;
+[% for(prop in class.properties){ %]  
+	[%=prop.name%] : [%if(prop.dataType.isDefined()){%][%=prop.dataType.name%][%}%];
+[% } %] 
+
+    constructor(obj?: I[%=class.name%]) {
+    }
+}

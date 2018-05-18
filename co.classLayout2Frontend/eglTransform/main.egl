@@ -1,0 +1,21 @@
+[%
+	var application=angular!Application.all.at(0);
+
+	var package:Template:= TemplateFactory.load('application_package.egl');
+	package.populate("application", application);
+	package.generate('src/package.json');
+	
+	var class : Template = TemplateFactory.load("class.egl");	
+	for (c in angular!Class.all) {
+	 	class.populate("class", c);
+	 	class.generate("src/app/models/" + c.name + ".ts");
+	 }
+	 
+	 var class : Template = TemplateFactory.load("service.egl");	
+	for (s in angular!Service.all) {
+	 	class.populate("service", s);
+	 	class.generate("src/app/services/" + s.name + ".service.ts");
+	 }
+	 
+	//var libraryModule : Template = TemplateFactory.load("library_module.egl");
+%]

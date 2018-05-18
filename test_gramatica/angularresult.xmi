@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:angularIonic="http://www.angularionic.com/angularionic">
+  <angularIonic:Application name="TestApp">
+    <appmodule name="TestAppSite" title="Sitio de Prueba">
+      <pages route="StaticTest"/>
+      <pages route="AdminProduct"/>
+    </appmodule>
+    <classifiers xsi:type="angularIonic:Class" name="ProductCategory">
+      <properties name="categoryName" required="true"/>
+      <properties name="categoryCode" required="true"/>
+    </classifiers>
+    <classifiers xsi:type="angularIonic:Service" name="ProductCategory"/>
+    <classifiers xsi:type="angularIonic:LibraryModule" name="ProductCategory"/>
+    <classifiers xsi:type="angularIonic:Class" name="ProductBrand">
+      <properties name="brandname" required="true"/>
+      <properties name="brandcode" required="true"/>
+    </classifiers>
+    <classifiers xsi:type="angularIonic:Service" name="ProductBrand"/>
+    <classifiers xsi:type="angularIonic:LibraryModule" name="ProductBrand"/>
+    <classifiers xsi:type="angularIonic:Class" name="Product">
+      <properties name="name" required="true"/>
+      <properties name="description" required="true"/>
+      <properties name="code" required="true"/>
+      <properties name="unitPrice"/>
+    </classifiers>
+    <classifiers xsi:type="angularIonic:Service" name="Product"/>
+    <classifiers xsi:type="angularIonic:LibraryModule" name="Product"/>
+  </angularIonic:Application>
+  <angularIonic:DataType name="string"/>
+  <angularIonic:DataType name="number"/>
+  <angularIonic:DataType name="bool"/>
+  <angularIonic:DataType name="any"/>
+</xmi:XMI>

@@ -1,0 +1,58 @@
+import { Injectable } from '@angular/core';
+import { [%=service.name%] } from '../models/[%=service.name.toLowerCase()%]';
+import { Http } from '@angular/http';
+
+@Injectable()
+export class [%=service.name%]Service {
+
+  private serviceUrl = 'https://classlayout-2-frontend.herokuapp.com/api/[%=service.name%]';
+
+  constructor(private http: Http) { }
+
+  getAll(): Promise<void | [%=service.name%][]> {
+    return this.http.get(this.serviceUrl)
+               .toPromise()
+               .then(response => response.json() as [%=service.name%][])
+               .catch(this.handleError);
+  }
+
+  // post("/api/[%=service.name.toLowerCase()%]")
+  create(item: [%=service.name%]): Promise<void | [%=service.name%]> {
+    return this.http.post(this.serviceUrl, item)
+               .toPromise()
+               .then(response => response.json() as [%=service.name%])
+               .catch(this.handleError);
+  }
+
+  // get("/api/[%=service.name.toLowerCase()%]/:id")
+  get(id: string): Promise<void | [%=service.name%]> {
+    let getUrl = this.serviceUrl + '/' + id;
+    return this.http.get(getUrl)
+               .toPromise()
+               .then(response => response.json() as [%=service.name%])
+               .catch(this.handleError);
+  }
+
+  // delete("/api/[%=service.name.toLowerCase()%]/:id")
+  delete(id: String): Promise<void | String> {
+    return this.http.delete(this.serviceUrl + '/' + id)
+               .toPromise()
+               .then(response => response.json() as String)
+               .catch(this.handleError);
+  }
+
+  // put("/api/[%=service.name.toLowerCase()%]/:id")
+  update(item: [%=service.name%]): Promise<void | [%=service.name%]> {
+    var putUrl = this.serviceUrl + '/' + item._id;
+    return this.http.put(putUrl, item)
+               .toPromise()
+               .then(response => response.json() as [%=service.name%])
+               .catch(this.handleError);
+  }
+
+  private handleError(error: any) {
+    let errMsg = (error.message) ? error.message :
+      error.status ? `${error.status} - ${error.statusText}` : 'Server error';
+    console.error(errMsg); // log to console instead
+  }
+}

@@ -8668,7 +8668,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleInputForm"
-    // InternalC2fDSL.g:4040:1: ruleInputForm returns [EObject current=null] : ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'inputForm' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? otherlv_14= 'entity' this_COLON_15= RULE_COLON ( ( ruleEString ) ) this_COMMA_17= RULE_COMMA otherlv_18= 'elements' this_COLON_19= RULE_COLON this_BRACKETSO_20= RULE_BRACKETSO ( (lv_elements_21_0= ruleElementView ) ) (this_COMMA_22= RULE_COMMA ( (lv_elements_23_0= ruleElementView ) ) )* this_BRACKETSC_24= RULE_BRACKETSC this_COMMA_25= RULE_COMMA this_BRACESCLOSE_26= RULE_BRACESCLOSE ) ;
+    // InternalC2fDSL.g:4040:1: ruleInputForm returns [EObject current=null] : ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'inputForm' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? otherlv_14= 'entity' this_COLON_15= RULE_COLON ( ( ruleEString ) ) this_COMMA_17= RULE_COMMA otherlv_18= 'elements' this_COLON_19= RULE_COLON this_BRACKETSO_20= RULE_BRACKETSO ( (lv_elements_21_0= ruleElementView ) ) (this_COMMA_22= RULE_COMMA ( (lv_elements_23_0= ruleElementView ) ) )* this_BRACKETSC_24= RULE_BRACKETSC this_BRACESCLOSE_25= RULE_BRACESCLOSE ) ;
     public final EObject ruleInputForm() throws RecognitionException {
         EObject current = null;
 
@@ -8690,8 +8690,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
         Token this_BRACKETSO_20=null;
         Token this_COMMA_22=null;
         Token this_BRACKETSC_24=null;
-        Token this_COMMA_25=null;
-        Token this_BRACESCLOSE_26=null;
+        Token this_BRACESCLOSE_25=null;
         AntlrDatatypeRuleToken lv_name_4_0 = null;
 
         AntlrDatatypeRuleToken lv_displayName_8_0 = null;
@@ -8707,11 +8706,11 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalC2fDSL.g:4046:2: ( ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'inputForm' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? otherlv_14= 'entity' this_COLON_15= RULE_COLON ( ( ruleEString ) ) this_COMMA_17= RULE_COMMA otherlv_18= 'elements' this_COLON_19= RULE_COLON this_BRACKETSO_20= RULE_BRACKETSO ( (lv_elements_21_0= ruleElementView ) ) (this_COMMA_22= RULE_COMMA ( (lv_elements_23_0= ruleElementView ) ) )* this_BRACKETSC_24= RULE_BRACKETSC this_COMMA_25= RULE_COMMA this_BRACESCLOSE_26= RULE_BRACESCLOSE ) )
-            // InternalC2fDSL.g:4047:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'inputForm' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? otherlv_14= 'entity' this_COLON_15= RULE_COLON ( ( ruleEString ) ) this_COMMA_17= RULE_COMMA otherlv_18= 'elements' this_COLON_19= RULE_COLON this_BRACKETSO_20= RULE_BRACKETSO ( (lv_elements_21_0= ruleElementView ) ) (this_COMMA_22= RULE_COMMA ( (lv_elements_23_0= ruleElementView ) ) )* this_BRACKETSC_24= RULE_BRACKETSC this_COMMA_25= RULE_COMMA this_BRACESCLOSE_26= RULE_BRACESCLOSE )
+            // InternalC2fDSL.g:4046:2: ( ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'inputForm' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? otherlv_14= 'entity' this_COLON_15= RULE_COLON ( ( ruleEString ) ) this_COMMA_17= RULE_COMMA otherlv_18= 'elements' this_COLON_19= RULE_COLON this_BRACKETSO_20= RULE_BRACKETSO ( (lv_elements_21_0= ruleElementView ) ) (this_COMMA_22= RULE_COMMA ( (lv_elements_23_0= ruleElementView ) ) )* this_BRACKETSC_24= RULE_BRACKETSC this_BRACESCLOSE_25= RULE_BRACESCLOSE ) )
+            // InternalC2fDSL.g:4047:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'inputForm' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? otherlv_14= 'entity' this_COLON_15= RULE_COLON ( ( ruleEString ) ) this_COMMA_17= RULE_COMMA otherlv_18= 'elements' this_COLON_19= RULE_COLON this_BRACKETSO_20= RULE_BRACKETSO ( (lv_elements_21_0= ruleElementView ) ) (this_COMMA_22= RULE_COMMA ( (lv_elements_23_0= ruleElementView ) ) )* this_BRACKETSC_24= RULE_BRACKETSC this_BRACESCLOSE_25= RULE_BRACESCLOSE )
             {
-            // InternalC2fDSL.g:4047:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'inputForm' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? otherlv_14= 'entity' this_COLON_15= RULE_COLON ( ( ruleEString ) ) this_COMMA_17= RULE_COMMA otherlv_18= 'elements' this_COLON_19= RULE_COLON this_BRACKETSO_20= RULE_BRACKETSO ( (lv_elements_21_0= ruleElementView ) ) (this_COMMA_22= RULE_COMMA ( (lv_elements_23_0= ruleElementView ) ) )* this_BRACKETSC_24= RULE_BRACKETSC this_COMMA_25= RULE_COMMA this_BRACESCLOSE_26= RULE_BRACESCLOSE )
-            // InternalC2fDSL.g:4048:3: () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'inputForm' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? otherlv_14= 'entity' this_COLON_15= RULE_COLON ( ( ruleEString ) ) this_COMMA_17= RULE_COMMA otherlv_18= 'elements' this_COLON_19= RULE_COLON this_BRACKETSO_20= RULE_BRACKETSO ( (lv_elements_21_0= ruleElementView ) ) (this_COMMA_22= RULE_COMMA ( (lv_elements_23_0= ruleElementView ) ) )* this_BRACKETSC_24= RULE_BRACKETSC this_COMMA_25= RULE_COMMA this_BRACESCLOSE_26= RULE_BRACESCLOSE
+            // InternalC2fDSL.g:4047:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'inputForm' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? otherlv_14= 'entity' this_COLON_15= RULE_COLON ( ( ruleEString ) ) this_COMMA_17= RULE_COMMA otherlv_18= 'elements' this_COLON_19= RULE_COLON this_BRACKETSO_20= RULE_BRACKETSO ( (lv_elements_21_0= ruleElementView ) ) (this_COMMA_22= RULE_COMMA ( (lv_elements_23_0= ruleElementView ) ) )* this_BRACKETSC_24= RULE_BRACKETSC this_BRACESCLOSE_25= RULE_BRACESCLOSE )
+            // InternalC2fDSL.g:4048:3: () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'inputForm' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? otherlv_14= 'entity' this_COLON_15= RULE_COLON ( ( ruleEString ) ) this_COMMA_17= RULE_COMMA otherlv_18= 'elements' this_COLON_19= RULE_COLON this_BRACKETSO_20= RULE_BRACKETSO ( (lv_elements_21_0= ruleElementView ) ) (this_COMMA_22= RULE_COMMA ( (lv_elements_23_0= ruleElementView ) ) )* this_BRACKETSC_24= RULE_BRACKETSC this_BRACESCLOSE_25= RULE_BRACESCLOSE
             {
             // InternalC2fDSL.g:4048:3: ()
             // InternalC2fDSL.g:4049:4: 
@@ -9033,17 +9032,13 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            this_BRACKETSC_24=(Token)match(input,RULE_BRACKETSC,FOLLOW_6); 
+            this_BRACKETSC_24=(Token)match(input,RULE_BRACKETSC,FOLLOW_14); 
 
             			newLeafNode(this_BRACKETSC_24, grammarAccess.getInputFormAccess().getBRACKETSCTerminalRuleCall_17());
             		
-            this_COMMA_25=(Token)match(input,RULE_COMMA,FOLLOW_14); 
+            this_BRACESCLOSE_25=(Token)match(input,RULE_BRACESCLOSE,FOLLOW_2); 
 
-            			newLeafNode(this_COMMA_25, grammarAccess.getInputFormAccess().getCOMMATerminalRuleCall_18());
-            		
-            this_BRACESCLOSE_26=(Token)match(input,RULE_BRACESCLOSE,FOLLOW_2); 
-
-            			newLeafNode(this_BRACESCLOSE_26, grammarAccess.getInputFormAccess().getBRACESCLOSETerminalRuleCall_19());
+            			newLeafNode(this_BRACESCLOSE_25, grammarAccess.getInputFormAccess().getBRACESCLOSETerminalRuleCall_18());
             		
 
             }
@@ -9068,7 +9063,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleCheckList"
-    // InternalC2fDSL.g:4256:1: entryRuleCheckList returns [EObject current=null] : iv_ruleCheckList= ruleCheckList EOF ;
+    // InternalC2fDSL.g:4252:1: entryRuleCheckList returns [EObject current=null] : iv_ruleCheckList= ruleCheckList EOF ;
     public final EObject entryRuleCheckList() throws RecognitionException {
         EObject current = null;
 
@@ -9076,8 +9071,8 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalC2fDSL.g:4256:50: (iv_ruleCheckList= ruleCheckList EOF )
-            // InternalC2fDSL.g:4257:2: iv_ruleCheckList= ruleCheckList EOF
+            // InternalC2fDSL.g:4252:50: (iv_ruleCheckList= ruleCheckList EOF )
+            // InternalC2fDSL.g:4253:2: iv_ruleCheckList= ruleCheckList EOF
             {
              newCompositeNode(grammarAccess.getCheckListRule()); 
             pushFollow(FOLLOW_1);
@@ -9104,7 +9099,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleCheckList"
-    // InternalC2fDSL.g:4263:1: ruleCheckList returns [EObject current=null] : ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'checkList' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )? (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )? (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )? (otherlv_12= 'property' ( ( ruleEString ) ) )? this_BRACESCLOSE_14= RULE_BRACESCLOSE ) ;
+    // InternalC2fDSL.g:4259:1: ruleCheckList returns [EObject current=null] : ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'checkList' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )? (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )? (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )? (otherlv_12= 'property' ( ( ruleEString ) ) )? this_BRACESCLOSE_14= RULE_BRACESCLOSE ) ;
     public final EObject ruleCheckList() throws RecognitionException {
         EObject current = null;
 
@@ -9130,14 +9125,14 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalC2fDSL.g:4269:2: ( ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'checkList' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )? (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )? (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )? (otherlv_12= 'property' ( ( ruleEString ) ) )? this_BRACESCLOSE_14= RULE_BRACESCLOSE ) )
-            // InternalC2fDSL.g:4270:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'checkList' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )? (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )? (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )? (otherlv_12= 'property' ( ( ruleEString ) ) )? this_BRACESCLOSE_14= RULE_BRACESCLOSE )
+            // InternalC2fDSL.g:4265:2: ( ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'checkList' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )? (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )? (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )? (otherlv_12= 'property' ( ( ruleEString ) ) )? this_BRACESCLOSE_14= RULE_BRACESCLOSE ) )
+            // InternalC2fDSL.g:4266:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'checkList' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )? (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )? (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )? (otherlv_12= 'property' ( ( ruleEString ) ) )? this_BRACESCLOSE_14= RULE_BRACESCLOSE )
             {
-            // InternalC2fDSL.g:4270:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'checkList' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )? (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )? (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )? (otherlv_12= 'property' ( ( ruleEString ) ) )? this_BRACESCLOSE_14= RULE_BRACESCLOSE )
-            // InternalC2fDSL.g:4271:3: () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'checkList' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )? (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )? (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )? (otherlv_12= 'property' ( ( ruleEString ) ) )? this_BRACESCLOSE_14= RULE_BRACESCLOSE
+            // InternalC2fDSL.g:4266:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'checkList' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )? (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )? (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )? (otherlv_12= 'property' ( ( ruleEString ) ) )? this_BRACESCLOSE_14= RULE_BRACESCLOSE )
+            // InternalC2fDSL.g:4267:3: () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'checkList' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )? (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )? (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )? (otherlv_12= 'property' ( ( ruleEString ) ) )? this_BRACESCLOSE_14= RULE_BRACESCLOSE
             {
-            // InternalC2fDSL.g:4271:3: ()
-            // InternalC2fDSL.g:4272:4: 
+            // InternalC2fDSL.g:4267:3: ()
+            // InternalC2fDSL.g:4268:4: 
             {
 
             				current = forceCreateModelElement(
@@ -9159,11 +9154,11 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(this_COLON_3, grammarAccess.getCheckListAccess().getCOLONTerminalRuleCall_3());
             		
-            // InternalC2fDSL.g:4290:3: ( (lv_name_4_0= ruleEString ) )
-            // InternalC2fDSL.g:4291:4: (lv_name_4_0= ruleEString )
+            // InternalC2fDSL.g:4286:3: ( (lv_name_4_0= ruleEString ) )
+            // InternalC2fDSL.g:4287:4: (lv_name_4_0= ruleEString )
             {
-            // InternalC2fDSL.g:4291:4: (lv_name_4_0= ruleEString )
-            // InternalC2fDSL.g:4292:5: lv_name_4_0= ruleEString
+            // InternalC2fDSL.g:4287:4: (lv_name_4_0= ruleEString )
+            // InternalC2fDSL.g:4288:5: lv_name_4_0= ruleEString
             {
 
             					newCompositeNode(grammarAccess.getCheckListAccess().getNameEStringParserRuleCall_4_0());
@@ -9194,7 +9189,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(this_COMMA_5, grammarAccess.getCheckListAccess().getCOMMATerminalRuleCall_5());
             		
-            // InternalC2fDSL.g:4313:3: (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )?
+            // InternalC2fDSL.g:4309:3: (otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) ) )?
             int alt74=2;
             int LA74_0 = input.LA(1);
 
@@ -9203,17 +9198,17 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt74) {
                 case 1 :
-                    // InternalC2fDSL.g:4314:4: otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) )
+                    // InternalC2fDSL.g:4310:4: otherlv_6= 'displayName' ( (lv_displayName_7_0= ruleEString ) )
                     {
                     otherlv_6=(Token)match(input,25,FOLLOW_5); 
 
                     				newLeafNode(otherlv_6, grammarAccess.getCheckListAccess().getDisplayNameKeyword_6_0());
                     			
-                    // InternalC2fDSL.g:4318:4: ( (lv_displayName_7_0= ruleEString ) )
-                    // InternalC2fDSL.g:4319:5: (lv_displayName_7_0= ruleEString )
+                    // InternalC2fDSL.g:4314:4: ( (lv_displayName_7_0= ruleEString ) )
+                    // InternalC2fDSL.g:4315:5: (lv_displayName_7_0= ruleEString )
                     {
-                    // InternalC2fDSL.g:4319:5: (lv_displayName_7_0= ruleEString )
-                    // InternalC2fDSL.g:4320:6: lv_displayName_7_0= ruleEString
+                    // InternalC2fDSL.g:4315:5: (lv_displayName_7_0= ruleEString )
+                    // InternalC2fDSL.g:4316:6: lv_displayName_7_0= ruleEString
                     {
 
                     						newCompositeNode(grammarAccess.getCheckListAccess().getDisplayNameEStringParserRuleCall_6_1_0());
@@ -9246,7 +9241,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalC2fDSL.g:4338:3: (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )?
+            // InternalC2fDSL.g:4334:3: (otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) ) )?
             int alt75=2;
             int LA75_0 = input.LA(1);
 
@@ -9255,17 +9250,17 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt75) {
                 case 1 :
-                    // InternalC2fDSL.g:4339:4: otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) )
+                    // InternalC2fDSL.g:4335:4: otherlv_8= 'description' ( (lv_description_9_0= ruleEString ) )
                     {
                     otherlv_8=(Token)match(input,31,FOLLOW_5); 
 
                     				newLeafNode(otherlv_8, grammarAccess.getCheckListAccess().getDescriptionKeyword_7_0());
                     			
-                    // InternalC2fDSL.g:4343:4: ( (lv_description_9_0= ruleEString ) )
-                    // InternalC2fDSL.g:4344:5: (lv_description_9_0= ruleEString )
+                    // InternalC2fDSL.g:4339:4: ( (lv_description_9_0= ruleEString ) )
+                    // InternalC2fDSL.g:4340:5: (lv_description_9_0= ruleEString )
                     {
-                    // InternalC2fDSL.g:4344:5: (lv_description_9_0= ruleEString )
-                    // InternalC2fDSL.g:4345:6: lv_description_9_0= ruleEString
+                    // InternalC2fDSL.g:4340:5: (lv_description_9_0= ruleEString )
+                    // InternalC2fDSL.g:4341:6: lv_description_9_0= ruleEString
                     {
 
                     						newCompositeNode(grammarAccess.getCheckListAccess().getDescriptionEStringParserRuleCall_7_1_0());
@@ -9298,7 +9293,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalC2fDSL.g:4363:3: (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )?
+            // InternalC2fDSL.g:4359:3: (otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) ) )?
             int alt76=2;
             int LA76_0 = input.LA(1);
 
@@ -9307,17 +9302,17 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt76) {
                 case 1 :
-                    // InternalC2fDSL.g:4364:4: otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) )
+                    // InternalC2fDSL.g:4360:4: otherlv_10= 'label' ( (lv_label_11_0= ruleEString ) )
                     {
                     otherlv_10=(Token)match(input,47,FOLLOW_5); 
 
                     				newLeafNode(otherlv_10, grammarAccess.getCheckListAccess().getLabelKeyword_8_0());
                     			
-                    // InternalC2fDSL.g:4368:4: ( (lv_label_11_0= ruleEString ) )
-                    // InternalC2fDSL.g:4369:5: (lv_label_11_0= ruleEString )
+                    // InternalC2fDSL.g:4364:4: ( (lv_label_11_0= ruleEString ) )
+                    // InternalC2fDSL.g:4365:5: (lv_label_11_0= ruleEString )
                     {
-                    // InternalC2fDSL.g:4369:5: (lv_label_11_0= ruleEString )
-                    // InternalC2fDSL.g:4370:6: lv_label_11_0= ruleEString
+                    // InternalC2fDSL.g:4365:5: (lv_label_11_0= ruleEString )
+                    // InternalC2fDSL.g:4366:6: lv_label_11_0= ruleEString
                     {
 
                     						newCompositeNode(grammarAccess.getCheckListAccess().getLabelEStringParserRuleCall_8_1_0());
@@ -9350,7 +9345,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalC2fDSL.g:4388:3: (otherlv_12= 'property' ( ( ruleEString ) ) )?
+            // InternalC2fDSL.g:4384:3: (otherlv_12= 'property' ( ( ruleEString ) ) )?
             int alt77=2;
             int LA77_0 = input.LA(1);
 
@@ -9359,17 +9354,17 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt77) {
                 case 1 :
-                    // InternalC2fDSL.g:4389:4: otherlv_12= 'property' ( ( ruleEString ) )
+                    // InternalC2fDSL.g:4385:4: otherlv_12= 'property' ( ( ruleEString ) )
                     {
                     otherlv_12=(Token)match(input,33,FOLLOW_5); 
 
                     				newLeafNode(otherlv_12, grammarAccess.getCheckListAccess().getPropertyKeyword_9_0());
                     			
-                    // InternalC2fDSL.g:4393:4: ( ( ruleEString ) )
-                    // InternalC2fDSL.g:4394:5: ( ruleEString )
+                    // InternalC2fDSL.g:4389:4: ( ( ruleEString ) )
+                    // InternalC2fDSL.g:4390:5: ( ruleEString )
                     {
-                    // InternalC2fDSL.g:4394:5: ( ruleEString )
-                    // InternalC2fDSL.g:4395:6: ruleEString
+                    // InternalC2fDSL.g:4390:5: ( ruleEString )
+                    // InternalC2fDSL.g:4391:6: ruleEString
                     {
 
                     						if (current==null) {
@@ -9426,7 +9421,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRadioButtonGroup"
-    // InternalC2fDSL.g:4418:1: entryRuleRadioButtonGroup returns [EObject current=null] : iv_ruleRadioButtonGroup= ruleRadioButtonGroup EOF ;
+    // InternalC2fDSL.g:4414:1: entryRuleRadioButtonGroup returns [EObject current=null] : iv_ruleRadioButtonGroup= ruleRadioButtonGroup EOF ;
     public final EObject entryRuleRadioButtonGroup() throws RecognitionException {
         EObject current = null;
 
@@ -9434,8 +9429,8 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalC2fDSL.g:4418:57: (iv_ruleRadioButtonGroup= ruleRadioButtonGroup EOF )
-            // InternalC2fDSL.g:4419:2: iv_ruleRadioButtonGroup= ruleRadioButtonGroup EOF
+            // InternalC2fDSL.g:4414:57: (iv_ruleRadioButtonGroup= ruleRadioButtonGroup EOF )
+            // InternalC2fDSL.g:4415:2: iv_ruleRadioButtonGroup= ruleRadioButtonGroup EOF
             {
              newCompositeNode(grammarAccess.getRadioButtonGroupRule()); 
             pushFollow(FOLLOW_1);
@@ -9462,7 +9457,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRadioButtonGroup"
-    // InternalC2fDSL.g:4425:1: ruleRadioButtonGroup returns [EObject current=null] : ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'radio' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )? otherlv_18= 'property' this_COLON_19= RULE_COLON ( ( ruleEString ) ) this_BRACESCLOSE_21= RULE_BRACESCLOSE ) ;
+    // InternalC2fDSL.g:4421:1: ruleRadioButtonGroup returns [EObject current=null] : ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'radio' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )? otherlv_18= 'property' this_COLON_19= RULE_COLON ( ( ruleEString ) ) this_BRACESCLOSE_21= RULE_BRACESCLOSE ) ;
     public final EObject ruleRadioButtonGroup() throws RecognitionException {
         EObject current = null;
 
@@ -9495,14 +9490,14 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalC2fDSL.g:4431:2: ( ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'radio' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )? otherlv_18= 'property' this_COLON_19= RULE_COLON ( ( ruleEString ) ) this_BRACESCLOSE_21= RULE_BRACESCLOSE ) )
-            // InternalC2fDSL.g:4432:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'radio' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )? otherlv_18= 'property' this_COLON_19= RULE_COLON ( ( ruleEString ) ) this_BRACESCLOSE_21= RULE_BRACESCLOSE )
+            // InternalC2fDSL.g:4427:2: ( ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'radio' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )? otherlv_18= 'property' this_COLON_19= RULE_COLON ( ( ruleEString ) ) this_BRACESCLOSE_21= RULE_BRACESCLOSE ) )
+            // InternalC2fDSL.g:4428:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'radio' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )? otherlv_18= 'property' this_COLON_19= RULE_COLON ( ( ruleEString ) ) this_BRACESCLOSE_21= RULE_BRACESCLOSE )
             {
-            // InternalC2fDSL.g:4432:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'radio' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )? otherlv_18= 'property' this_COLON_19= RULE_COLON ( ( ruleEString ) ) this_BRACESCLOSE_21= RULE_BRACESCLOSE )
-            // InternalC2fDSL.g:4433:3: () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'radio' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )? otherlv_18= 'property' this_COLON_19= RULE_COLON ( ( ruleEString ) ) this_BRACESCLOSE_21= RULE_BRACESCLOSE
+            // InternalC2fDSL.g:4428:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'radio' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )? otherlv_18= 'property' this_COLON_19= RULE_COLON ( ( ruleEString ) ) this_BRACESCLOSE_21= RULE_BRACESCLOSE )
+            // InternalC2fDSL.g:4429:3: () this_BRACESOPEN_1= RULE_BRACESOPEN otherlv_2= 'radio' this_COLON_3= RULE_COLON ( (lv_name_4_0= ruleEString ) ) this_COMMA_5= RULE_COMMA (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )? (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )? (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )? otherlv_18= 'property' this_COLON_19= RULE_COLON ( ( ruleEString ) ) this_BRACESCLOSE_21= RULE_BRACESCLOSE
             {
-            // InternalC2fDSL.g:4433:3: ()
-            // InternalC2fDSL.g:4434:4: 
+            // InternalC2fDSL.g:4429:3: ()
+            // InternalC2fDSL.g:4430:4: 
             {
 
             				current = forceCreateModelElement(
@@ -9524,11 +9519,11 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(this_COLON_3, grammarAccess.getRadioButtonGroupAccess().getCOLONTerminalRuleCall_3());
             		
-            // InternalC2fDSL.g:4452:3: ( (lv_name_4_0= ruleEString ) )
-            // InternalC2fDSL.g:4453:4: (lv_name_4_0= ruleEString )
+            // InternalC2fDSL.g:4448:3: ( (lv_name_4_0= ruleEString ) )
+            // InternalC2fDSL.g:4449:4: (lv_name_4_0= ruleEString )
             {
-            // InternalC2fDSL.g:4453:4: (lv_name_4_0= ruleEString )
-            // InternalC2fDSL.g:4454:5: lv_name_4_0= ruleEString
+            // InternalC2fDSL.g:4449:4: (lv_name_4_0= ruleEString )
+            // InternalC2fDSL.g:4450:5: lv_name_4_0= ruleEString
             {
 
             					newCompositeNode(grammarAccess.getRadioButtonGroupAccess().getNameEStringParserRuleCall_4_0());
@@ -9559,7 +9554,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(this_COMMA_5, grammarAccess.getRadioButtonGroupAccess().getCOMMATerminalRuleCall_5());
             		
-            // InternalC2fDSL.g:4475:3: (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )?
+            // InternalC2fDSL.g:4471:3: (otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA )?
             int alt78=2;
             int LA78_0 = input.LA(1);
 
@@ -9568,7 +9563,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt78) {
                 case 1 :
-                    // InternalC2fDSL.g:4476:4: otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA
+                    // InternalC2fDSL.g:4472:4: otherlv_6= 'displayName' this_COLON_7= RULE_COLON ( (lv_displayName_8_0= ruleEString ) ) this_COMMA_9= RULE_COMMA
                     {
                     otherlv_6=(Token)match(input,25,FOLLOW_4); 
 
@@ -9578,11 +9573,11 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
                     				newLeafNode(this_COLON_7, grammarAccess.getRadioButtonGroupAccess().getCOLONTerminalRuleCall_6_1());
                     			
-                    // InternalC2fDSL.g:4484:4: ( (lv_displayName_8_0= ruleEString ) )
-                    // InternalC2fDSL.g:4485:5: (lv_displayName_8_0= ruleEString )
+                    // InternalC2fDSL.g:4480:4: ( (lv_displayName_8_0= ruleEString ) )
+                    // InternalC2fDSL.g:4481:5: (lv_displayName_8_0= ruleEString )
                     {
-                    // InternalC2fDSL.g:4485:5: (lv_displayName_8_0= ruleEString )
-                    // InternalC2fDSL.g:4486:6: lv_displayName_8_0= ruleEString
+                    // InternalC2fDSL.g:4481:5: (lv_displayName_8_0= ruleEString )
+                    // InternalC2fDSL.g:4482:6: lv_displayName_8_0= ruleEString
                     {
 
                     						newCompositeNode(grammarAccess.getRadioButtonGroupAccess().getDisplayNameEStringParserRuleCall_6_2_0());
@@ -9619,7 +9614,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalC2fDSL.g:4508:3: (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )?
+            // InternalC2fDSL.g:4504:3: (otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA )?
             int alt79=2;
             int LA79_0 = input.LA(1);
 
@@ -9628,7 +9623,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt79) {
                 case 1 :
-                    // InternalC2fDSL.g:4509:4: otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA
+                    // InternalC2fDSL.g:4505:4: otherlv_10= 'description' this_COLON_11= RULE_COLON ( (lv_description_12_0= ruleEString ) ) this_COMMA_13= RULE_COMMA
                     {
                     otherlv_10=(Token)match(input,31,FOLLOW_4); 
 
@@ -9638,11 +9633,11 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
                     				newLeafNode(this_COLON_11, grammarAccess.getRadioButtonGroupAccess().getCOLONTerminalRuleCall_7_1());
                     			
-                    // InternalC2fDSL.g:4517:4: ( (lv_description_12_0= ruleEString ) )
-                    // InternalC2fDSL.g:4518:5: (lv_description_12_0= ruleEString )
+                    // InternalC2fDSL.g:4513:4: ( (lv_description_12_0= ruleEString ) )
+                    // InternalC2fDSL.g:4514:5: (lv_description_12_0= ruleEString )
                     {
-                    // InternalC2fDSL.g:4518:5: (lv_description_12_0= ruleEString )
-                    // InternalC2fDSL.g:4519:6: lv_description_12_0= ruleEString
+                    // InternalC2fDSL.g:4514:5: (lv_description_12_0= ruleEString )
+                    // InternalC2fDSL.g:4515:6: lv_description_12_0= ruleEString
                     {
 
                     						newCompositeNode(grammarAccess.getRadioButtonGroupAccess().getDescriptionEStringParserRuleCall_7_2_0());
@@ -9679,7 +9674,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalC2fDSL.g:4541:3: (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )?
+            // InternalC2fDSL.g:4537:3: (otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA )?
             int alt80=2;
             int LA80_0 = input.LA(1);
 
@@ -9688,7 +9683,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt80) {
                 case 1 :
-                    // InternalC2fDSL.g:4542:4: otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA
+                    // InternalC2fDSL.g:4538:4: otherlv_14= 'label' this_COLON_15= RULE_COLON ( (lv_label_16_0= ruleEString ) ) this_COMMA_17= RULE_COMMA
                     {
                     otherlv_14=(Token)match(input,47,FOLLOW_4); 
 
@@ -9698,11 +9693,11 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
                     				newLeafNode(this_COLON_15, grammarAccess.getRadioButtonGroupAccess().getCOLONTerminalRuleCall_8_1());
                     			
-                    // InternalC2fDSL.g:4550:4: ( (lv_label_16_0= ruleEString ) )
-                    // InternalC2fDSL.g:4551:5: (lv_label_16_0= ruleEString )
+                    // InternalC2fDSL.g:4546:4: ( (lv_label_16_0= ruleEString ) )
+                    // InternalC2fDSL.g:4547:5: (lv_label_16_0= ruleEString )
                     {
-                    // InternalC2fDSL.g:4551:5: (lv_label_16_0= ruleEString )
-                    // InternalC2fDSL.g:4552:6: lv_label_16_0= ruleEString
+                    // InternalC2fDSL.g:4547:5: (lv_label_16_0= ruleEString )
+                    // InternalC2fDSL.g:4548:6: lv_label_16_0= ruleEString
                     {
 
                     						newCompositeNode(grammarAccess.getRadioButtonGroupAccess().getLabelEStringParserRuleCall_8_2_0());
@@ -9747,11 +9742,11 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(this_COLON_19, grammarAccess.getRadioButtonGroupAccess().getCOLONTerminalRuleCall_10());
             		
-            // InternalC2fDSL.g:4582:3: ( ( ruleEString ) )
-            // InternalC2fDSL.g:4583:4: ( ruleEString )
+            // InternalC2fDSL.g:4578:3: ( ( ruleEString ) )
+            // InternalC2fDSL.g:4579:4: ( ruleEString )
             {
-            // InternalC2fDSL.g:4583:4: ( ruleEString )
-            // InternalC2fDSL.g:4584:5: ruleEString
+            // InternalC2fDSL.g:4579:4: ( ruleEString )
+            // InternalC2fDSL.g:4580:5: ruleEString
             {
 
             					if (current==null) {
@@ -9802,7 +9797,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEDouble"
-    // InternalC2fDSL.g:4606:1: entryRuleEDouble returns [String current=null] : iv_ruleEDouble= ruleEDouble EOF ;
+    // InternalC2fDSL.g:4602:1: entryRuleEDouble returns [String current=null] : iv_ruleEDouble= ruleEDouble EOF ;
     public final String entryRuleEDouble() throws RecognitionException {
         String current = null;
 
@@ -9810,8 +9805,8 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalC2fDSL.g:4606:47: (iv_ruleEDouble= ruleEDouble EOF )
-            // InternalC2fDSL.g:4607:2: iv_ruleEDouble= ruleEDouble EOF
+            // InternalC2fDSL.g:4602:47: (iv_ruleEDouble= ruleEDouble EOF )
+            // InternalC2fDSL.g:4603:2: iv_ruleEDouble= ruleEDouble EOF
             {
              newCompositeNode(grammarAccess.getEDoubleRule()); 
             pushFollow(FOLLOW_1);
@@ -9838,7 +9833,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEDouble"
-    // InternalC2fDSL.g:4613:1: ruleEDouble returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= '-' )? (this_INT_1= RULE_INT )? kw= '.' this_INT_3= RULE_INT ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )? ) ;
+    // InternalC2fDSL.g:4609:1: ruleEDouble returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= '-' )? (this_INT_1= RULE_INT )? kw= '.' this_INT_3= RULE_INT ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )? ) ;
     public final AntlrDatatypeRuleToken ruleEDouble() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -9851,13 +9846,13 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalC2fDSL.g:4619:2: ( ( (kw= '-' )? (this_INT_1= RULE_INT )? kw= '.' this_INT_3= RULE_INT ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )? ) )
-            // InternalC2fDSL.g:4620:2: ( (kw= '-' )? (this_INT_1= RULE_INT )? kw= '.' this_INT_3= RULE_INT ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )? )
+            // InternalC2fDSL.g:4615:2: ( ( (kw= '-' )? (this_INT_1= RULE_INT )? kw= '.' this_INT_3= RULE_INT ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )? ) )
+            // InternalC2fDSL.g:4616:2: ( (kw= '-' )? (this_INT_1= RULE_INT )? kw= '.' this_INT_3= RULE_INT ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )? )
             {
-            // InternalC2fDSL.g:4620:2: ( (kw= '-' )? (this_INT_1= RULE_INT )? kw= '.' this_INT_3= RULE_INT ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )? )
-            // InternalC2fDSL.g:4621:3: (kw= '-' )? (this_INT_1= RULE_INT )? kw= '.' this_INT_3= RULE_INT ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )?
+            // InternalC2fDSL.g:4616:2: ( (kw= '-' )? (this_INT_1= RULE_INT )? kw= '.' this_INT_3= RULE_INT ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )? )
+            // InternalC2fDSL.g:4617:3: (kw= '-' )? (this_INT_1= RULE_INT )? kw= '.' this_INT_3= RULE_INT ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )?
             {
-            // InternalC2fDSL.g:4621:3: (kw= '-' )?
+            // InternalC2fDSL.g:4617:3: (kw= '-' )?
             int alt81=2;
             int LA81_0 = input.LA(1);
 
@@ -9866,7 +9861,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt81) {
                 case 1 :
-                    // InternalC2fDSL.g:4622:4: kw= '-'
+                    // InternalC2fDSL.g:4618:4: kw= '-'
                     {
                     kw=(Token)match(input,45,FOLLOW_88); 
 
@@ -9879,7 +9874,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalC2fDSL.g:4628:3: (this_INT_1= RULE_INT )?
+            // InternalC2fDSL.g:4624:3: (this_INT_1= RULE_INT )?
             int alt82=2;
             int LA82_0 = input.LA(1);
 
@@ -9888,7 +9883,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt82) {
                 case 1 :
-                    // InternalC2fDSL.g:4629:4: this_INT_1= RULE_INT
+                    // InternalC2fDSL.g:4625:4: this_INT_1= RULE_INT
                     {
                     this_INT_1=(Token)match(input,RULE_INT,FOLLOW_89); 
 
@@ -9915,7 +9910,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(this_INT_3, grammarAccess.getEDoubleAccess().getINTTerminalRuleCall_3());
             		
-            // InternalC2fDSL.g:4649:3: ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )?
+            // InternalC2fDSL.g:4645:3: ( (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT )?
             int alt85=2;
             int LA85_0 = input.LA(1);
 
@@ -9924,9 +9919,9 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt85) {
                 case 1 :
-                    // InternalC2fDSL.g:4650:4: (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT
+                    // InternalC2fDSL.g:4646:4: (kw= 'E' | kw= 'e' ) (kw= '-' )? this_INT_7= RULE_INT
                     {
-                    // InternalC2fDSL.g:4650:4: (kw= 'E' | kw= 'e' )
+                    // InternalC2fDSL.g:4646:4: (kw= 'E' | kw= 'e' )
                     int alt83=2;
                     int LA83_0 = input.LA(1);
 
@@ -9944,7 +9939,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
                     }
                     switch (alt83) {
                         case 1 :
-                            // InternalC2fDSL.g:4651:5: kw= 'E'
+                            // InternalC2fDSL.g:4647:5: kw= 'E'
                             {
                             kw=(Token)match(input,65,FOLLOW_40); 
 
@@ -9955,7 +9950,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 2 :
-                            // InternalC2fDSL.g:4657:5: kw= 'e'
+                            // InternalC2fDSL.g:4653:5: kw= 'e'
                             {
                             kw=(Token)match(input,66,FOLLOW_40); 
 
@@ -9968,7 +9963,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalC2fDSL.g:4663:4: (kw= '-' )?
+                    // InternalC2fDSL.g:4659:4: (kw= '-' )?
                     int alt84=2;
                     int LA84_0 = input.LA(1);
 
@@ -9977,7 +9972,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
                     }
                     switch (alt84) {
                         case 1 :
-                            // InternalC2fDSL.g:4664:5: kw= '-'
+                            // InternalC2fDSL.g:4660:5: kw= '-'
                             {
                             kw=(Token)match(input,45,FOLLOW_46); 
 
@@ -10026,7 +10021,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleIterationFilter"
-    // InternalC2fDSL.g:4682:1: entryRuleIterationFilter returns [EObject current=null] : iv_ruleIterationFilter= ruleIterationFilter EOF ;
+    // InternalC2fDSL.g:4678:1: entryRuleIterationFilter returns [EObject current=null] : iv_ruleIterationFilter= ruleIterationFilter EOF ;
     public final EObject entryRuleIterationFilter() throws RecognitionException {
         EObject current = null;
 
@@ -10034,8 +10029,8 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalC2fDSL.g:4682:56: (iv_ruleIterationFilter= ruleIterationFilter EOF )
-            // InternalC2fDSL.g:4683:2: iv_ruleIterationFilter= ruleIterationFilter EOF
+            // InternalC2fDSL.g:4678:56: (iv_ruleIterationFilter= ruleIterationFilter EOF )
+            // InternalC2fDSL.g:4679:2: iv_ruleIterationFilter= ruleIterationFilter EOF
             {
              newCompositeNode(grammarAccess.getIterationFilterRule()); 
             pushFollow(FOLLOW_1);
@@ -10062,7 +10057,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleIterationFilter"
-    // InternalC2fDSL.g:4689:1: ruleIterationFilter returns [EObject current=null] : ( () this_BRACESOPEN_1= RULE_BRACESOPEN (otherlv_2= 'input' ( ( ruleEString ) ) )? this_BRACESCLOSE_4= RULE_BRACESCLOSE ) ;
+    // InternalC2fDSL.g:4685:1: ruleIterationFilter returns [EObject current=null] : ( () this_BRACESOPEN_1= RULE_BRACESOPEN (otherlv_2= 'input' ( ( ruleEString ) ) )? this_BRACESCLOSE_4= RULE_BRACESCLOSE ) ;
     public final EObject ruleIterationFilter() throws RecognitionException {
         EObject current = null;
 
@@ -10074,14 +10069,14 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalC2fDSL.g:4695:2: ( ( () this_BRACESOPEN_1= RULE_BRACESOPEN (otherlv_2= 'input' ( ( ruleEString ) ) )? this_BRACESCLOSE_4= RULE_BRACESCLOSE ) )
-            // InternalC2fDSL.g:4696:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN (otherlv_2= 'input' ( ( ruleEString ) ) )? this_BRACESCLOSE_4= RULE_BRACESCLOSE )
+            // InternalC2fDSL.g:4691:2: ( ( () this_BRACESOPEN_1= RULE_BRACESOPEN (otherlv_2= 'input' ( ( ruleEString ) ) )? this_BRACESCLOSE_4= RULE_BRACESCLOSE ) )
+            // InternalC2fDSL.g:4692:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN (otherlv_2= 'input' ( ( ruleEString ) ) )? this_BRACESCLOSE_4= RULE_BRACESCLOSE )
             {
-            // InternalC2fDSL.g:4696:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN (otherlv_2= 'input' ( ( ruleEString ) ) )? this_BRACESCLOSE_4= RULE_BRACESCLOSE )
-            // InternalC2fDSL.g:4697:3: () this_BRACESOPEN_1= RULE_BRACESOPEN (otherlv_2= 'input' ( ( ruleEString ) ) )? this_BRACESCLOSE_4= RULE_BRACESCLOSE
+            // InternalC2fDSL.g:4692:2: ( () this_BRACESOPEN_1= RULE_BRACESOPEN (otherlv_2= 'input' ( ( ruleEString ) ) )? this_BRACESCLOSE_4= RULE_BRACESCLOSE )
+            // InternalC2fDSL.g:4693:3: () this_BRACESOPEN_1= RULE_BRACESOPEN (otherlv_2= 'input' ( ( ruleEString ) ) )? this_BRACESCLOSE_4= RULE_BRACESCLOSE
             {
-            // InternalC2fDSL.g:4697:3: ()
-            // InternalC2fDSL.g:4698:4: 
+            // InternalC2fDSL.g:4693:3: ()
+            // InternalC2fDSL.g:4694:4: 
             {
 
             				current = forceCreateModelElement(
@@ -10095,7 +10090,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(this_BRACESOPEN_1, grammarAccess.getIterationFilterAccess().getBRACESOPENTerminalRuleCall_1());
             		
-            // InternalC2fDSL.g:4708:3: (otherlv_2= 'input' ( ( ruleEString ) ) )?
+            // InternalC2fDSL.g:4704:3: (otherlv_2= 'input' ( ( ruleEString ) ) )?
             int alt86=2;
             int LA86_0 = input.LA(1);
 
@@ -10104,17 +10099,17 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
             }
             switch (alt86) {
                 case 1 :
-                    // InternalC2fDSL.g:4709:4: otherlv_2= 'input' ( ( ruleEString ) )
+                    // InternalC2fDSL.g:4705:4: otherlv_2= 'input' ( ( ruleEString ) )
                     {
                     otherlv_2=(Token)match(input,67,FOLLOW_5); 
 
                     				newLeafNode(otherlv_2, grammarAccess.getIterationFilterAccess().getInputKeyword_2_0());
                     			
-                    // InternalC2fDSL.g:4713:4: ( ( ruleEString ) )
-                    // InternalC2fDSL.g:4714:5: ( ruleEString )
+                    // InternalC2fDSL.g:4709:4: ( ( ruleEString ) )
+                    // InternalC2fDSL.g:4710:5: ( ruleEString )
                     {
-                    // InternalC2fDSL.g:4714:5: ( ruleEString )
-                    // InternalC2fDSL.g:4715:6: ruleEString
+                    // InternalC2fDSL.g:4710:5: ( ruleEString )
+                    // InternalC2fDSL.g:4711:6: ruleEString
                     {
 
                     						if (current==null) {
@@ -10171,7 +10166,7 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleLayoutType"
-    // InternalC2fDSL.g:4738:1: ruleLayoutType returns [Enumerator current=null] : ( (enumLiteral_0= 'SINGLE_COLUMN' ) | (enumLiteral_1= 'TWO_COLUMNS' ) | (enumLiteral_2= 'LEFT_BAR' ) | (enumLiteral_3= 'RIGHT_BAR' ) | (enumLiteral_4= 'THREE_COLUMNS' ) ) ;
+    // InternalC2fDSL.g:4734:1: ruleLayoutType returns [Enumerator current=null] : ( (enumLiteral_0= 'SINGLE_COLUMN' ) | (enumLiteral_1= 'TWO_COLUMNS' ) | (enumLiteral_2= 'LEFT_BAR' ) | (enumLiteral_3= 'RIGHT_BAR' ) | (enumLiteral_4= 'THREE_COLUMNS' ) ) ;
     public final Enumerator ruleLayoutType() throws RecognitionException {
         Enumerator current = null;
 
@@ -10185,10 +10180,10 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalC2fDSL.g:4744:2: ( ( (enumLiteral_0= 'SINGLE_COLUMN' ) | (enumLiteral_1= 'TWO_COLUMNS' ) | (enumLiteral_2= 'LEFT_BAR' ) | (enumLiteral_3= 'RIGHT_BAR' ) | (enumLiteral_4= 'THREE_COLUMNS' ) ) )
-            // InternalC2fDSL.g:4745:2: ( (enumLiteral_0= 'SINGLE_COLUMN' ) | (enumLiteral_1= 'TWO_COLUMNS' ) | (enumLiteral_2= 'LEFT_BAR' ) | (enumLiteral_3= 'RIGHT_BAR' ) | (enumLiteral_4= 'THREE_COLUMNS' ) )
+            // InternalC2fDSL.g:4740:2: ( ( (enumLiteral_0= 'SINGLE_COLUMN' ) | (enumLiteral_1= 'TWO_COLUMNS' ) | (enumLiteral_2= 'LEFT_BAR' ) | (enumLiteral_3= 'RIGHT_BAR' ) | (enumLiteral_4= 'THREE_COLUMNS' ) ) )
+            // InternalC2fDSL.g:4741:2: ( (enumLiteral_0= 'SINGLE_COLUMN' ) | (enumLiteral_1= 'TWO_COLUMNS' ) | (enumLiteral_2= 'LEFT_BAR' ) | (enumLiteral_3= 'RIGHT_BAR' ) | (enumLiteral_4= 'THREE_COLUMNS' ) )
             {
-            // InternalC2fDSL.g:4745:2: ( (enumLiteral_0= 'SINGLE_COLUMN' ) | (enumLiteral_1= 'TWO_COLUMNS' ) | (enumLiteral_2= 'LEFT_BAR' ) | (enumLiteral_3= 'RIGHT_BAR' ) | (enumLiteral_4= 'THREE_COLUMNS' ) )
+            // InternalC2fDSL.g:4741:2: ( (enumLiteral_0= 'SINGLE_COLUMN' ) | (enumLiteral_1= 'TWO_COLUMNS' ) | (enumLiteral_2= 'LEFT_BAR' ) | (enumLiteral_3= 'RIGHT_BAR' ) | (enumLiteral_4= 'THREE_COLUMNS' ) )
             int alt87=5;
             switch ( input.LA(1) ) {
             case 68:
@@ -10225,10 +10220,10 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
 
             switch (alt87) {
                 case 1 :
-                    // InternalC2fDSL.g:4746:3: (enumLiteral_0= 'SINGLE_COLUMN' )
+                    // InternalC2fDSL.g:4742:3: (enumLiteral_0= 'SINGLE_COLUMN' )
                     {
-                    // InternalC2fDSL.g:4746:3: (enumLiteral_0= 'SINGLE_COLUMN' )
-                    // InternalC2fDSL.g:4747:4: enumLiteral_0= 'SINGLE_COLUMN'
+                    // InternalC2fDSL.g:4742:3: (enumLiteral_0= 'SINGLE_COLUMN' )
+                    // InternalC2fDSL.g:4743:4: enumLiteral_0= 'SINGLE_COLUMN'
                     {
                     enumLiteral_0=(Token)match(input,68,FOLLOW_2); 
 
@@ -10242,10 +10237,10 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalC2fDSL.g:4754:3: (enumLiteral_1= 'TWO_COLUMNS' )
+                    // InternalC2fDSL.g:4750:3: (enumLiteral_1= 'TWO_COLUMNS' )
                     {
-                    // InternalC2fDSL.g:4754:3: (enumLiteral_1= 'TWO_COLUMNS' )
-                    // InternalC2fDSL.g:4755:4: enumLiteral_1= 'TWO_COLUMNS'
+                    // InternalC2fDSL.g:4750:3: (enumLiteral_1= 'TWO_COLUMNS' )
+                    // InternalC2fDSL.g:4751:4: enumLiteral_1= 'TWO_COLUMNS'
                     {
                     enumLiteral_1=(Token)match(input,69,FOLLOW_2); 
 
@@ -10259,10 +10254,10 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalC2fDSL.g:4762:3: (enumLiteral_2= 'LEFT_BAR' )
+                    // InternalC2fDSL.g:4758:3: (enumLiteral_2= 'LEFT_BAR' )
                     {
-                    // InternalC2fDSL.g:4762:3: (enumLiteral_2= 'LEFT_BAR' )
-                    // InternalC2fDSL.g:4763:4: enumLiteral_2= 'LEFT_BAR'
+                    // InternalC2fDSL.g:4758:3: (enumLiteral_2= 'LEFT_BAR' )
+                    // InternalC2fDSL.g:4759:4: enumLiteral_2= 'LEFT_BAR'
                     {
                     enumLiteral_2=(Token)match(input,70,FOLLOW_2); 
 
@@ -10276,10 +10271,10 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalC2fDSL.g:4770:3: (enumLiteral_3= 'RIGHT_BAR' )
+                    // InternalC2fDSL.g:4766:3: (enumLiteral_3= 'RIGHT_BAR' )
                     {
-                    // InternalC2fDSL.g:4770:3: (enumLiteral_3= 'RIGHT_BAR' )
-                    // InternalC2fDSL.g:4771:4: enumLiteral_3= 'RIGHT_BAR'
+                    // InternalC2fDSL.g:4766:3: (enumLiteral_3= 'RIGHT_BAR' )
+                    // InternalC2fDSL.g:4767:4: enumLiteral_3= 'RIGHT_BAR'
                     {
                     enumLiteral_3=(Token)match(input,71,FOLLOW_2); 
 
@@ -10293,10 +10288,10 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalC2fDSL.g:4778:3: (enumLiteral_4= 'THREE_COLUMNS' )
+                    // InternalC2fDSL.g:4774:3: (enumLiteral_4= 'THREE_COLUMNS' )
                     {
-                    // InternalC2fDSL.g:4778:3: (enumLiteral_4= 'THREE_COLUMNS' )
-                    // InternalC2fDSL.g:4779:4: enumLiteral_4= 'THREE_COLUMNS'
+                    // InternalC2fDSL.g:4774:3: (enumLiteral_4= 'THREE_COLUMNS' )
+                    // InternalC2fDSL.g:4775:4: enumLiteral_4= 'THREE_COLUMNS'
                     {
                     enumLiteral_4=(Token)match(input,72,FOLLOW_2); 
 
@@ -10337,11 +10332,11 @@ public class InternalC2fDSLParser extends AbstractInternalAntlrParser {
     static final String dfa_1s = "\14\uffff";
     static final String dfa_2s = "\1\4\1\22\12\uffff";
     static final String dfa_3s = "\1\4\1\77\12\uffff";
-    static final String dfa_4s = "\2\uffff\1\6\1\2\1\10\1\3\1\12\1\1\1\5\1\4\1\7\1\11";
+    static final String dfa_4s = "\2\uffff\1\12\1\6\1\2\1\10\1\3\1\1\1\5\1\4\1\7\1\11";
     static final String dfa_5s = "\14\uffff}>";
     static final String[] dfa_6s = {
             "\1\1",
-            "\1\7\35\uffff\1\3\1\5\2\uffff\1\11\1\10\1\uffff\1\2\1\uffff\1\12\1\uffff\1\4\1\uffff\1\13\1\uffff\1\6",
+            "\1\7\35\uffff\1\4\1\6\2\uffff\1\11\1\10\1\uffff\1\3\1\uffff\1\12\1\uffff\1\5\1\uffff\1\13\1\uffff\1\2",
             "",
             "",
             "",

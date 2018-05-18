@@ -14598,7 +14598,6 @@ rule__InputForm__Group__18
 	}
 :
 	rule__InputForm__Group__18__Impl
-	rule__InputForm__Group__19
 ;
 finally {
 	restoreStackSize(stackSize);
@@ -14610,35 +14609,9 @@ rule__InputForm__Group__18__Impl
 	}
 :
 (
-	{ before(grammarAccess.getInputFormAccess().getCOMMATerminalRuleCall_18()); }
-	RULE_COMMA
-	{ after(grammarAccess.getInputFormAccess().getCOMMATerminalRuleCall_18()); }
-)
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__InputForm__Group__19
-	@init {
-		int stackSize = keepStackSize();
-	}
-:
-	rule__InputForm__Group__19__Impl
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__InputForm__Group__19__Impl
-	@init {
-		int stackSize = keepStackSize();
-	}
-:
-(
-	{ before(grammarAccess.getInputFormAccess().getBRACESCLOSETerminalRuleCall_19()); }
+	{ before(grammarAccess.getInputFormAccess().getBRACESCLOSETerminalRuleCall_18()); }
 	RULE_BRACESCLOSE
-	{ after(grammarAccess.getInputFormAccess().getBRACESCLOSETerminalRuleCall_19()); }
+	{ after(grammarAccess.getInputFormAccess().getBRACESCLOSETerminalRuleCall_18()); }
 )
 ;
 finally {

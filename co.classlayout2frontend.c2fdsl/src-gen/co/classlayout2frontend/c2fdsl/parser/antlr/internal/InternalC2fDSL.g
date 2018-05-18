@@ -4241,13 +4241,9 @@ ruleInputForm returns [EObject current=null]
 		{
 			newLeafNode(this_BRACKETSC_24, grammarAccess.getInputFormAccess().getBRACKETSCTerminalRuleCall_17());
 		}
-		this_COMMA_25=RULE_COMMA
+		this_BRACESCLOSE_25=RULE_BRACESCLOSE
 		{
-			newLeafNode(this_COMMA_25, grammarAccess.getInputFormAccess().getCOMMATerminalRuleCall_18());
-		}
-		this_BRACESCLOSE_26=RULE_BRACESCLOSE
-		{
-			newLeafNode(this_BRACESCLOSE_26, grammarAccess.getInputFormAccess().getBRACESCLOSETerminalRuleCall_19());
+			newLeafNode(this_BRACESCLOSE_25, grammarAccess.getInputFormAccess().getBRACESCLOSETerminalRuleCall_18());
 		}
 	)
 ;
