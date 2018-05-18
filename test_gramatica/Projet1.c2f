@@ -1,0 +1,60 @@
+{
+  Project: {
+    name: "ArticleStore",
+    EntitiesModel: {
+      name: "entityModel",
+      PrimitiveType: [
+        { name: "String" },
+        { name: "Int" },
+        { name: "Boolean" },
+        { name: "Date" },
+        { name: "String" }
+      ],
+      Entity: [
+        {
+          name: "Article",
+          Property: [
+            { name: "name" },
+            { name: "description" },
+            { name: "image" }
+          ],
+          Reference: [
+            { name: "category" },
+            { name: "brand" }
+          ]
+        },
+        {
+          name: "ArticleCategory",
+          Property: [
+            { name: "name" },
+            { name: "description" }
+          ]
+        },
+        {
+          name: "Brand",
+          Property: [
+            { name: "name" },
+            { name: "description" },
+            { name: "image" }
+          ]
+        }
+      ]
+    },
+    siteViews: { name: "SiteArticleStore" },
+    pageViews: { name: "PageArticleStore" },
+    InputForm: {
+      name: "ArticleFormUtil",
+      AutoComplete: { name: "SearchArticle" },
+      CheckList: { name: "BrandFilter" },
+      DropdownList: { name: "FilterCategory" }
+    },
+    IterationContainer: {
+      name: "ArticleStoreView",
+      Image: { name: "ArticleImage" },
+      TextArea: [
+        { name: "ArticleName" },
+        { name: "ArticleDescription" }
+      ]
+    }
+  }
+}

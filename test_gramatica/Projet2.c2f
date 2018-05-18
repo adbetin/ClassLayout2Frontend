@@ -1,0 +1,80 @@
+{
+  Project: {
+    name: "ArticleStore",
+    EntitiesModel: {
+      name: "entityModel",
+      PrimitiveType: [
+        { name: "String" },
+        { name: "Int" },
+        { name: "Boolean" },
+        { name: "Date" }
+      ],
+      Entity: [
+        {
+          name: "City",
+          Property: [
+            { name: "name" },
+            {
+              name: "description",
+              type: "String"
+            }
+          ],
+          Reference: { name: "country" }
+        },
+        {
+          name: "Country",
+          Property: [
+            { name: "name" },
+            {
+              name: "description",
+              type: "String"
+            },
+            {
+              name: "Code",
+              type: "String"
+            }
+          ]
+        }
+      ]
+    },
+    siteViews: { name: "CityCountryAdmin" },
+    pageViews: [
+      { name: "CityAdmin" },
+      { name: "CountryAdmin" }
+    ],
+    InputForm: [
+      {
+        name: "CountryForm",
+        InputText: [
+          { name: "countryName" },
+          {
+            name: "countryDescription",
+            multiline: "true"
+          },
+          { name: "countryCode" }
+        ]
+      },
+      {
+        name: "CityForm",
+        InputText: [
+          { name: "cityName" },
+          {
+            name: "cityDescription",
+            multiline: "true"
+          }
+        ],
+        Dropdownlist: { name: "cityCountry" }
+      }
+    ],
+    IterationContainer: [
+      {
+        name: "CountryList",
+        TextArea: { name: "name" }
+      },
+      {
+        name: "CityList",
+        TextArea: { name: "name" }
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+	name: "TestApp",
+	entityModel: {
+		name: "TestApp EntityModel",
+		elements: [
+			{
+				primitive: 'string'
+			},
+			{
+				primitive: 'number'
+			},
+			{
+				primitive: 'bool'
+			},
+			{
+				primitive: 'any'
+			},
+			{
+				class : 'Product',
+				elements: [
+					{
+						property: "name",
+						displayName: "Nombre",
+						required: true
+						dataType
+					}
+				]
+			}
+		]
+	},
+	site: {
+		name: "TestAppSite",
+		templateColor: "blue",
+		displayName: "Sitio de Prueba",
+	},
+	pages: [
+		
+	]
+	
+}
