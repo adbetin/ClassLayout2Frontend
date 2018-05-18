@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: co.classlayout2frontend.c2fdsl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: co.classlayout2frontend.c2fdsl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: co.classLayout2Frontend,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: co.classlayout2frontend.c2fdsl.formatting2,
+ co.classlayout2frontend.c2fdsl.services,
+ co.classlayout2frontend.c2fdsl.serializer,
+ co.classlayout2frontend.c2fdsl.validation,
+ co.classlayout2frontend.c2fdsl,
+ co.classlayout2frontend.c2fdsl.scoping,
+ co.classlayout2frontend.c2fdsl.parser.antlr,
+ co.classlayout2frontend.c2fdsl.parser.antlr.internal,
+ co.classlayout2frontend.c2fdsl.generator
+Import-Package: org.apache.log4j

@@ -95,6 +95,7 @@
     <genClasses ecoreClass="classLayout2Frontend.ecore#//StaticContainer"/>
     <genClasses ecoreClass="classLayout2Frontend.ecore#//TextArea">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//TextArea/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//TextArea/isTitle"/>
     </genClasses>
     <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//Selection"/>
     <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//Input">
@@ -107,7 +108,7 @@
     <genClasses ecoreClass="classLayout2Frontend.ecore#//CheckList"/>
     <genClasses image="false" ecoreClass="classLayout2Frontend.ecore#//ElementView">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//ElementView/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//ElementView/dsisplayName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//ElementView/displayName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute classLayout2Frontend.ecore#//ElementView/description"/>
     </genClasses>
     <genClasses ecoreClass="classLayout2Frontend.ecore#//RadioButtonGroup"/>

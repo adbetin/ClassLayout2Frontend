@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: co.classlayout2frontend.c2fdsl.ide
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: co.classlayout2frontend.c2fdsl.ide; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: co.classlayout2frontend.c2fdsl,
+ co.classLayout2Frontend,
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide,
+ org.antlr.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: co.classlayout2frontend.c2fdsl.ide.contentassist.antlr.internal,
+ co.classlayout2frontend.c2fdsl.ide.contentassist.antlr
+
