@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../../../models/product';
+import { ProductService } from '../../../services/product.service';
 
 @Component({
   selector: 'product-table',
@@ -6,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductTableComponent implements OnInit {
 
-  constructor() { }
+  elementList: Product[]
+  tableHeaders: string[] = ['Nombre', 'Descripcion', 'Codigo', 'Precio Unitario'];
+
+  constructor(private productService: ProductService) {
+    productService.getAll().then((resultList: Product[]) => {
+      this.elementList = resultList;
+    })
+  }
 
   ngOnInit() {
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from '../../../models/product';
 import { ProductService } from '../../../services/product.service';
 
@@ -9,14 +9,19 @@ import { ProductService } from '../../../services/product.service';
 export class ProductFormComponent implements OnInit {
 
   @Input() editItem: Product;
+  @Output() complete: EventEmitter<Product> = new EventEmitter<Product>();
 
   constructor(private productService: ProductService) { }
 
   save(){
     if(this.editItem._id == ''){
-      this.productService.create(this.editItem)
+      this.productService.create(this.editItem).then((result:Product) => {
+        this.complete.emit(result);
+      })
     }else{
-
+      this.productService.update(this.editItem).then((result:Product) => {
+        this.complete.emit(result);
+      })
     }
   }
 

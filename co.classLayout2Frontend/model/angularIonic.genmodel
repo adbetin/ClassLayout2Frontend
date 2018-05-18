@@ -74,13 +74,7 @@
     </genClasses>
     <genClasses ecoreClass="angularIonic.ecore#//Service">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//Service/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference angularIonic.ecore#//Service/properties"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference angularIonic.ecore#//Service/methods"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference angularIonic.ecore#//Service/requiredServices"/>
-    </genClasses>
-    <genClasses ecoreClass="angularIonic.ecore#//ServiceProperty">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//ServiceProperty/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference angularIonic.ecore#//ServiceProperty/dataType"/>
     </genClasses>
     <genClasses ecoreClass="angularIonic.ecore#//ServiceMethod">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//ServiceMethod/name"/>
@@ -92,11 +86,40 @@
     <genClasses ecoreClass="angularIonic.ecore#//Template">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//Template/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//Template/inline"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//Template/value"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference angularIonic.ecore#//Template/htmlElements"/>
     </genClasses>
     <genClasses ecoreClass="angularIonic.ecore#//ServiceParameter">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//ServiceParameter/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference angularIonic.ecore#//ServiceParameter/dataType"/>
+    </genClasses>
+    <genClasses ecoreClass="angularIonic.ecore#//Application">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//Application/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference angularIonic.ecore#//Application/librarymodules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference angularIonic.ecore#//Application/appmodule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference angularIonic.ecore#//Application/services"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference angularIonic.ecore#//Application/classifiers"/>
+    </genClasses>
+    <genClasses ecoreClass="angularIonic.ecore#//htmlElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference angularIonic.ecore#//htmlElement/componentproperty"/>
+    </genClasses>
+    <genClasses ecoreClass="angularIonic.ecore#//input"/>
+    <genClasses ecoreClass="angularIonic.ecore#//output"/>
+    <genClasses ecoreClass="angularIonic.ecore#//TextInput">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//TextInput/multiline"/>
+    </genClasses>
+    <genClasses ecoreClass="angularIonic.ecore#//Select">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//Select/multiSelect"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference angularIonic.ecore#//Select/sourceList"/>
+    </genClasses>
+    <genClasses ecoreClass="angularIonic.ecore#//RadioButton">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference angularIonic.ecore#//RadioButton/sourceList"/>
+    </genClasses>
+    <genClasses ecoreClass="angularIonic.ecore#//TextArea">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//TextArea/value"/>
+    </genClasses>
+    <genClasses ecoreClass="angularIonic.ecore#//Image">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//Image/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute angularIonic.ecore#//Image/height"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
